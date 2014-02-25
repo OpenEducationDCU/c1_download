@@ -76,5 +76,6 @@ Select a team and a data item about that team
 
 <input type="submit" value="Get Data"></input>
 </select>
-
+</form>
+</body>
 </html>
