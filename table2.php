@@ -13,7 +13,9 @@
 
  if ($_SERVER["REQUEST_METHOD"] == "POST"  ){
  
-	$tablesPage = "http://www.bbc.com/sport/football/tables";
+	$tablesPage = "http://localhost/tables.htm";
+
+
 	
 	if(!empty($_POST["team"])){
 	
@@ -45,7 +47,7 @@ function getTeamData($team, $tablesPage){
 	*/
 	$html = new DOMDocument(); 
 	@$html->loadHtmlFile($tablesPage); //use DOM
-   echo $html->saveHTML(); 
+ //  echo $html->saveHTML(); 
 
 	$xpath = new DOMXPath($html); //use XPath
 	$items = $xpath->query('//td/a[text()="' . $team . '"]/../..'); //get the relevant table row
