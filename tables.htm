@@ -1,0 +1,1095 @@
+<!DOCTYPE html> <html lang="en" > <head> <!-- Barlesque 2.60.7 --> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <meta name="description" content="Find out which football teams are leading the pack or are at risk of relegation in all the major leagues and competitions on BBC Sport. Includes the Barclay's Premier League, Championship, Scottish Premiership, Champions League and more." /> <meta name="keywords" content="BBC, Sport" />   <title>BBC Sport - Football - Tables</title>     
+   
+  <link rel="index" href="http://www.bbc.co.uk/a-z/" title="A to Z" /> <link rel="copyright" href="http://www.bbc.co.uk/terms/" title="Terms of Use" /> <link rel="icon" href="http://www.bbc.co.uk/favicon.ico" type="image/x-icon" />  <meta name="viewport" content="width = 996" /> 
+
+<script>window.bbcredirection={geo:true}</script><script type="text/javascript">/*<![CDATA[*/
+window.orb = window.orb || {};
+(function() {
+    'use strict';
+    window.fig = window.fig || {};
+    window.fig.manager = {
+                include: function(w) {
+            w = w || window;
+            var d = w.document,
+                c = d.cookie,
+                f = c.match(/ckns_orb_fig=([^;]+)/);
+
+            if ( !f && c.indexOf('ckns_orb_nofig=1') > -1 ) {
+                this.setFig(w, {no:1});
+            }
+            else {
+                if (f) {
+                    eval('f = ' + decodeURIComponent(RegExp.$1) + ';')
+                    this.setFig(w, f);                  
+                }
+                d.write('<script src="https://ssl.live.bbc.co.uk/frameworks/fig/1/fig.js"><'+'/script>');
+            }         
+  
+        },
+                confirm: function(w) {
+            w = w || window;
+            if (w.orb && w.orb.fig && w.orb.fig('no')) {
+               this.setFigCookie(w);
+            }
+            
+            if (w.orb === undefined || w.orb.fig === undefined) {
+                this.setFig(w, {no:1});
+                this.setFigCookie(w);
+            }
+        },
+                setFigCookie: function(w) {
+            w.document.cookie = 'ckns_orb_nofig=1; expires=' + new Date(new Date().getTime() + 1000 * 60 * 10).toGMTString() + ';';
+        },
+                setFig: function(w, f){
+            (function(){var o=f;w.orb=w.orb||{};w.orb.fig=function(k){return (arguments.length)? o[k]:o};})();
+        }
+    }
+})();
+fig.manager.include();
+/*]]>*/</script>
+<script type="text/javascript"> fig.manager.confirm(); </script>
+
+ <link rel="stylesheet" type="text/css" href="http://static.bbci.co.uk/frameworks/barlesque/2.60.7/desktop/3.5/style/main.css"  />  <link rel="stylesheet" type="text/css" href="http://static.bbci.co.uk/sport/ui/3.2.128/css/desktop/shared-compiled.css"  />  <link rel="stylesheet" type="text/css" href="http://static.bbci.co.uk/sport/ui/3.2.128/css/desktop/elements/branding/olympics-2012.css"  />  <link rel="stylesheet" type="text/css" href="http://static.bbci.co.uk/sport/2.7.238/desktop/styles/core-compiled.css" media="screen,print" />  <link rel="stylesheet" type="text/css" href="http://static.bbci.co.uk/sport/2.7.238/desktop/styles/print.css" media="print" />  <script type="text/javascript">/*<![CDATA[*/ (function(undefined){if(!window.bbc){window.bbc={}}var ROLLING_PERIOD_DAYS=30;window.bbc.Mandolin=function(id,segments,opts){var now=new Date().getTime(),storedItem,DEFAULT_START=now,DEFAULT_RATE=1,COOKIE_NAME="ckpf_mandolin";opts=opts||{};this._id=id;this._segmentSet=segments;this._store=new window.window.bbc.Mandolin.Storage(COOKIE_NAME);this._opts=opts;this._rate=(opts.rate!==undefined)?+opts.rate:DEFAULT_RATE;this._startTs=(opts.start!==undefined)?new Date(opts.start).getTime():new Date(DEFAULT_START).getTime();this._endTs=(opts.end!==undefined)?new Date(opts.end).getTime():daysFromNow(ROLLING_PERIOD_DAYS);this._signupEndTs=(opts.signupEnd!==undefined)?new Date(opts.signupEnd).getTime():this._endTs;this._segment=null;if(typeof id!=="string"){throw new Error("Invalid Argument: id must be defined and be a string")}if(Object.prototype.toString.call(segments)!=="[object Array]"){throw new Error("Invalid Argument: Segments are required.")}if(opts.rate!==undefined&&(opts.rate<0||opts.rate>1)){throw new Error("Invalid Argument: Rate must be between 0 and 1.")}if(this._startTs>this._endTs){throw new Error("Invalid Argument: end date must occur after start date.")}if(!(this._startTs<this._signupEndTs&&this._signupEndTs<=this._endTs)){throw new Error("Invalid Argument: SignupEnd must be between start and end date")}removeExpired.call(this,now);if((storedItem=this._store.getItem(this._id))){this._segment=storedItem.segment}else{if(this._startTs<=now&&now<this._signupEndTs&&now<=this._endTs&&this._store.isEnabled()===true){this._segment=pick(segments,this._rate);if(opts.end===undefined){this._store.setItem(this._id,{segment:this._segment})}else{this._store.setItem(this._id,{segment:this._segment,end:this._endTs})}log.call(this,"mandolin_segment")}}log.call(this,"mandolin_view")};window.bbc.Mandolin.prototype.getSegment=function(){return this._segment};function log(actionType,params){var that=this;require(["istats-1"],function(istats){istats.log(actionType,that._id+":"+that._segment,params?params:{})})}function removeExpired(expires){var items=this._store.getItems(),expiresInt=+expires;for(var key in items){if(items[key].end!==undefined&&+items[key].end<expiresInt){this._store.removeItem(key)}}}function getLastExpirationDate(data){var winner=0,rollingExpire=daysFromNow(ROLLING_PERIOD_DAYS);for(var key in data){if(data[key].end===undefined&&rollingExpire>winner){winner=rollingExpire}else{if(+data[key].end>winner){winner=+data[key].end}}}return(winner)?new Date(winner):new Date(rollingExpire)}window.bbc.Mandolin.prototype.log=function(params){log.call(this,"mandolin_log",params)};window.bbc.Mandolin.prototype.convert=function(params){log.call(this,"mandolin_convert",params);this.convert=function(){}};function daysFromNow(n){var endDate;endDate=new Date().getTime()+(n*60*60*24)*1000;return endDate}function pick(segments,rate){var picked,min=0,max=segments.length-1;if(typeof rate==="number"&&Math.random()>rate){return null}do{picked=Math.floor(Math.random()*(max-min+1))+min}while(picked>max);return segments[picked]}window.bbc.Mandolin.Storage=function(name){this._cookieName=name;this._isEnabled=(bbccookies.isAllowed(this._cookieName)===true&&bbccookies.cookiesEnabled()===true)};window.bbc.Mandolin.Storage.prototype.setItem=function(key,value){var storeData=this.getItems();storeData[key]=value;this.save(storeData);return value};window.bbc.Mandolin.Storage.prototype.isEnabled=function(){return this._isEnabled};window.bbc.Mandolin.Storage.prototype.getItem=function(key){var storeData=this.getItems();return storeData[key]};window.bbc.Mandolin.Storage.prototype.removeItem=function(key){var storeData=this.getItems();delete storeData[key];this.save(storeData)};window.bbc.Mandolin.Storage.prototype.getItems=function(){return deserialise(this.readCookie(this._cookieName)||"")};window.bbc.Mandolin.Storage.prototype.save=function(data){window.bbccookies.set(this._cookieName+"="+encodeURIComponent(serialise(data))+"; expires="+getLastExpirationDate(data).toUTCString()+";")};window.bbc.Mandolin.Storage.prototype.readCookie=function(name){var nameEQ=name+"=",ca=window.bbccookies.get().split(";"),i,c;for(i=0;i<ca.length;i++){c=ca[i];while(c.charAt(0)===" "){c=c.substring(1,c.length)}if(c.indexOf(nameEQ)===0){return decodeURIComponent(c.substring(nameEQ.length,c.length))}}return null};function serialise(o){var str="";for(var p in o){if(o.hasOwnProperty(p)){str+='"'+p+'"'+":"+(typeof o[p]==="object"?(o[p]===null?"null":"{"+serialise(o[p])+"}"):'"'+o[p].toString().replace(/"/g,'\\"')+'"')+","}}return str.replace(/,\}/g,"}").replace(/,$/g,"")}function deserialise(str){var o;eval("o = {"+str+"}");return o}})(); /*]]>*/</script>  <script type="text/javascript">/*<![CDATA[*/ if (typeof bbccookies_flag === 'undefined') { bbccookies_flag = 'ON'; } showCTA_flag = true; cta_enabled = (showCTA_flag && (bbccookies_flag === 'ON') ); (function(){var e="ckns_policy",m="Thu, 01 Jan 1970 00:00:00 GMT",k={ads:true,personalisation:true,performance:true,necessary:true};function f(p){if(f.cache[p]){return f.cache[p]}var o=p.split("/"),q=[""];do{q.unshift((o.join("/")||"/"));o.pop()}while(q[0]!=="/");f.cache[p]=q;return q}f.cache={};function a(p){if(a.cache[p]){return a.cache[p]}var q=p.split("."),o=[];while(q.length&&"|co.uk|com|".indexOf("|"+q.join(".")+"|")===-1){if(q.length){o.push(q.join("."))}q.shift()}f.cache[p]=o;return o}a.cache={};function i(o,t,p){var z=[""].concat(a(window.location.hostname)),w=f(window.location.pathname),y="",r,x;for(var s=0,v=z.length;s<v;s++){r=z[s];for(var q=0,u=w.length;q<u;q++){x=w[q];y=o+"="+t+";"+(r?"domain="+r+";":"")+(x?"path="+x+";":"")+(p?"expires="+p+";":"");bbccookies.set(y,true)}}}window.bbccookies={_setEverywhere:i,cookiesEnabled:function(){var o="ckns_testcookie"+Math.floor(Math.random()*100000);this.set(o+"=1");if(this.get().indexOf(o)>-1){g(o);return true}return false},set:function(o){return document.cookie=o},get:function(){return document.cookie},_setPolicy:function(o){return h.apply(this,arguments)},readPolicy:function(o){return b.apply(this,arguments)},_deletePolicy:function(){i(e,"",m)},isAllowed:function(){return true},_isConfirmed:function(){return c()!==null},_acceptsAll:function(){var o=b();return o&&!(j(o).indexOf("0")>-1)},_getCookieName:function(){return d.apply(this,arguments)},_showPrompt:function(){var o=(!this._isConfirmed()&&window.cta_enabled&&this.cookiesEnabled()&&!window.bbccookies_disable);return(window.orb&&window.orb.fig)?o&&(window.orb.fig("no")||window.orb.fig("ck")):o}};bbccookies._getPolicy=bbccookies.readPolicy;function d(p){var o=(""+p).match(/^([^=]+)(?==)/);return(o&&o.length?o[0]:"")}function j(o){return""+(o.ads?1:0)+(o.personalisation?1:0)+(o.performance?1:0)}function h(r){if(typeof r==="undefined"){r=k}if(typeof arguments[0]==="string"){var o=arguments[0],q=arguments[1];if(o==="necessary"){q=true}r=b();r[o]=q}else{if(typeof arguments[0]==="object"){r.necessary=true}}var p=new Date();p.setYear(p.getFullYear()+1);p=p.toUTCString();bbccookies.set(e+"="+j(r)+";domain=bbc.co.uk;path=/;expires="+p+";");bbccookies.set(e+"="+j(r)+";domain=bbc.com;path=/;expires="+p+";");return r}function l(o){if(o===null){return null}var p=o.split("");return{ads:!!+p[0],personalisation:!!+p[1],performance:!!+p[2],necessary:true}}function c(){var o=new RegExp("(?:^|; ?)"+e+"=(\\d\\d\\d)($|;)"),p=document.cookie.match(o);if(!p){return null}return p[1]}function b(o){var p=l(c());if(!p){p=k}if(o){return p[o]}else{return p}}function g(o){return document.cookie=o+"=;expires="+m+";"}function n(){var o='<script type="text/javascript" src="http://static.bbci.co.uk/frameworks/bbccookies/0.6.3/script/bbccookies.js"><\/script>';if(window.bbccookies_flag==="ON"&&!bbccookies._acceptsAll()&&!window.bbccookies_disable){document.write(o)}}n()})(); /*]]>*/</script>      <script type="text/javascript"> if (! window.gloader) { window.gloader = [ "glow", {map: "http://node1.bbcimg.co.uk/glow/glow/map.1.7.7.js"}]; } </script>  <script type="text/javascript" src="http://node1.bbcimg.co.uk/glow/gloader.0.1.6.js"></script>   <script type="text/javascript" src="http://static.bbci.co.uk/frameworks/requirejs/0.13.1/sharedmodules/require.js"></script> <script type="text/javascript">  bbcRequireMap = {"jquery-1":"http://static.bbci.co.uk/frameworks/jquery/0.3.0/sharedmodules/jquery-1.7.2", "jquery-1.4":"http://static.bbci.co.uk/frameworks/jquery/0.3.0/sharedmodules/jquery-1.4", "jquery-1.9":"http://static.bbci.co.uk/frameworks/jquery/0.3.0/sharedmodules/jquery-1.9.1", "swfobject-2":"http://static.bbci.co.uk/frameworks/swfobject/0.1.10/sharedmodules/swfobject-2", "demi-1":"http://static.bbci.co.uk/frameworks/demi/0.10.0/sharedmodules/demi-1", "gelui-1":"http://static.bbci.co.uk/frameworks/gelui/0.9.13/sharedmodules/gelui-1", "cssp!gelui-1/overlay":"http://static.bbci.co.uk/frameworks/gelui/0.9.13/sharedmodules/gelui-1/overlay.css", "istats-1":"http://static.bbci.co.uk/frameworks/istats/0.17.3/modules/istats-1", "relay-1":"http://static.bbci.co.uk/frameworks/relay/0.2.4/sharedmodules/relay-1", "clock-1":"http://static.bbci.co.uk/frameworks/clock/0.1.9/sharedmodules/clock-1", "canvas-clock-1":"http://static.bbci.co.uk/frameworks/clock/0.1.9/sharedmodules/canvas-clock-1", "cssp!clock-1":"http://static.bbci.co.uk/frameworks/clock/0.1.9/sharedmodules/clock-1.css", "jssignals-1":"http://static.bbci.co.uk/frameworks/jssignals/0.3.6/modules/jssignals-1", "jcarousel-1":"http://static.bbci.co.uk/frameworks/jcarousel/0.1.10/modules/jcarousel-1", "plugins/favourite":"http://static.bbci.co.uk/modules/plugin/favourite/1.1.15/modules/plugins/favourite", "personalisation":"http://static.bbci.co.uk/modules/personalisation/0.8.2/modules/personalisation", "sportui/imageGallery":"http://static.bbci.co.uk/sport/ui/3.2.128/modules/sportui/imageGallery", "sportui/expander":"http://static.bbci.co.uk/sport/ui/3.2.128/modules/sportui/expander", "empSwitch":"http://static.bbci.co.uk/sport/ui/3.2.128/modules/empSwitch", "jsonpclient":"http://static.bbci.co.uk/sport/ui/3.2.128/modules/jsonpclient", "sportui/favouritesTray/ui":"http://static.bbci.co.uk/sport/ui/3.2.128/modules/sportui/favouritesTray/ui", "sportui/schedule-carousel":"http://static.bbci.co.uk/sport/ui/3.2.128/modules/sportui/schedule-carousel", "sportui/sprite-animator":"http://static.bbci.co.uk/sport/ui/3.2.128/modules/sportui/sprite-animator", "sportui/jquery.inview":"http://static.bbci.co.uk/sport/ui/3.2.128/modules/sportui/jquery.inview"}; require({ baseUrl: 'http://static.bbci.co.uk/', paths: bbcRequireMap, waitSeconds: 30 }); </script>      <script type="text/javascript" src="http://static.bbci.co.uk/frameworks/barlesque/2.60.7/desktop/3.5/script/barlesque.js"></script>
+    <script type="text/javascript" src="http://static.bbci.co.uk/sport/ui/3.2.128/js/desktop/shared-compiled.js"></script>
+  
+<!--[if IE 6]>
+        <script type="text/javascript">
+        try {
+            document.execCommand("BackgroundImageCache",false,true);
+        } catch(e) {}
+    </script>
+        <style type="text/css">
+        /* Use filters for IE6 */
+        #blq-blocks a {
+            background-image: none;
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://static.bbci.co.uk/frameworks/barlesque/2.60.7/desktop/3.5//img/blq-blocks_white_alpha.png', sizingMethod='image');
+        }
+        .blq-masthead-focus #blq-blocks a,
+        .blq-mast-text-dark #blq-blocks a {
+            background-image: none;
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://static.bbci.co.uk/frameworks/barlesque/2.60.7/desktop/3.5//img/blq-blocks_grey_alpha.png', sizingMethod='image');
+        }
+        #blq-nav-search button span {
+            background-image: none;
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://static.bbci.co.uk/frameworks/barlesque/2.60.7/desktop/3.5//img/blq-search_grey_alpha.png', sizingMethod='image');
+        }
+        #blq-nav-search button img {
+            position: absolute;
+            left: -999em;    
+        }
+    </style>
+<![endif]-->
+
+<!--[if (IE 7])|(IE 8)>
+    <style type="text/css">
+        .blq-clearfix {
+            display: inline-block;
+        }
+    </style>
+<![endif]-->
+
+<script type="text/javascript">
+     blq.setEnvironment('live');  if (blq.setLabel) blq.setLabel('searchSuggestion', "Search");  if (! /bbc\.co\.uk$/i.test(window.location.hostname) ) { document.documentElement.className += ' blq-not-bbc-co-uk'; } </script>
+
+  <script type="text/javascript"> /*<![CDATA[*/ function oqsSurveyManager(w, flag) {  var defaultThreshold = 0.7, usePulseThreshold = (flag === 'OFF')? 1 : defaultThreshold, activeThreshold; w.oqs = w.oqs || {}; if ( w.document.cookie.match(/(?:^|; *)ckns_oqs_usePulseThreshold=([\d.]+)/) ) { activeThreshold = RegExp.$1; } else if (typeof w.oqs_usePulseThreshold !== 'undefined') { activeThreshold = w.oqs_usePulseThreshold; } else { activeThreshold = usePulseThreshold; } w.oqs.usePulse = (w.Math.random() < activeThreshold); if (!w.oqs.usePulse) {  w.document.write('<script type="text/javascript" src="http://static.bbci.co.uk/frameworks/barlesque/2.60.7/desktop/3.5/script/vendor/edr.js"><'+'/script>'); } } oqsSurveyManager(window, 'ON'); /*]]>*/ </script> 
+        <!-- BBCDOTCOM template: desktop journalismVariant: false ipIsAdvertiseCombined: true adsEnabled: true  showDotcom: true flagpole: ON -->
+            <script type="text/javascript">
+            /*<![CDATA[*/
+            if (window.bbcdotcom === undefined) {
+                var bbcdotcom = {
+                    data: {},
+                    advert: {
+                        write: function () {},
+                        show: function () {},
+                        isActive: function () {
+                            return false;
+                        }
+                    },
+                    objects: function(str) {
+                        return false;
+                    }
+                };
+            }
+            bbcdotcom.objects = function (strName, action, obj) {
+                var nameParts, i, len;
+                nameParts = strName.split(".");
+                if (action === undefined) {
+                    action = 'valid';
+                }
+                if (obj === undefined) {
+                    obj = window;
+                }
+                for (i = 0, len = nameParts.length; i < len; i++) {
+                    if (obj[nameParts[i]] === undefined) {
+                        if (action === 'create') {
+                            obj[nameParts[i]] = {};
+                        } else {
+                            return false;
+                        }
+                    } else if (typeof obj[nameParts[i]] === 'function') {
+                        if(obj[nameParts[i]]() !== undefined) {
+                            return obj[nameParts[i]]();
+                        }
+                    }
+                    obj = obj[nameParts[i]];
+                }
+                return obj;
+            };
+            /*]]>*/
+        </script>
+        <style type="text/css">.bbccom_display_none{display:none;}</style>
+<script type="text/javascript">
+    /*<![CDATA[*/
+    bbcdotcom.objects('bbcdotcom.config', 'create');
+    bbcdotcom.config =(function(ads, analytics) {
+        var adsEnabled=ads,
+            analyticsEnabled=analytics,
+            jsPrefix="http://static.bbci.co.uk/bbcdotcom/0.3.237/script",
+            swfPrefix="http://static.bbci.co.uk/bbcdotcom/0.3.237/swf",
+            cssPrefix="http://static.bbci.co.uk/bbcdotcom/0.3.237/style";
+        return {
+            setAdsEnabled: function(enabled) {
+                /* Once it has been disable to not allow it to be enabled */
+                adsEnabled = (adsEnabled !== 0) ? enabled : 0;
+            },
+            isAdsEnabled: function() {
+                return adsEnabled;
+            },
+            setAnalyticsEnabled: function(enabled) {
+                /* Once it has been disable to not allow it to be enabled */
+                analyticsEnabled = (analyticsEnabled !== 0) ? enabled : 0;
+            },
+            isAnalyticsEnabled: function() {
+                return analyticsEnabled;
+            },
+            setJsPrefix: function (prefix) {
+                jsPrefix = prefix;
+            },
+            getJsPrefix: function () {
+                return jsPrefix;
+            },
+            setSwfPrefix: function (prefix) {
+                swfPrefix = prefix;
+            },
+            getSwfPrefix: function () {
+                return swfPrefix;
+            },
+            setCssPrefix: function (prefix) {
+                cssPrefix = prefix;
+            },
+            getCssPrefix: function () {
+                return cssPrefix;
+            }
+        };
+    }(1, 1));
+    bbcdotcom.objects('bbcdotcom.siteCatalyst', 'create');
+    bbcdotcom.siteCatalyst = {"ch":"","cdp":"3","ce":"UTF-8"};
+    bbcdotcom.objects('bbcdotcom.stats', 'create');
+    /* Create BBC.adverts skeleton */
+    if (window.BBC === undefined) {
+        var BBC = {};
+    }
+    if (window.BBC.adverts === undefined) {
+        BBC.adverts = {
+            setZone: function () {},
+            configure: function () {},
+            write: function () {},
+            show: function () {},
+            isActive: function () {
+                return false;
+            },
+            setScriptRoot: function () {},
+            setImgRoot: function () {},
+            getAdvertTag: function () {},
+            getSectionPath: function() {},
+            showPartnerButtons: function() {}
+        };
+    }
+    (function(){
+        if(typeof require !== 'undefined') {
+            require({
+                paths:{
+                    "bbcdotcom":"http://static.bbci.co.uk/bbcdotcom/0.3.237/script"
+                }
+            });
+        }
+    })();
+    if (typeof orb !== 'undefined' && typeof orb.fig === 'function') {
+        bbcdotcom.data = {
+            a: orb.fig('ad')? 1 : 0,
+            b: (0 == orb.fig('uk')) ? 1 : 0,
+            c: orb.fig('ap')
+        };
+    } else {
+        document.write('<script type="text/javascript" src="http://tps.bbc.com/wwscripts/data">\x3C/script>');
+    }
+    /*]]>*/
+</script>
+<script type="text/javascript">
+    /*<![CDATA[*/
+    if (typeof bbcdotcom.data == 'undefined' || typeof bbcdotcom.data.a == 'undefined' || typeof bbcdotcom.data.b == 'undefined' || typeof bbcdotcom.data.c == 'undefined') {
+        bbcdotcom.data = {a:0,b:0,c:0};
+    }
+    if (bbcdotcom.data.a == 1) {
+        document.write('<script type="text/javascript" src="http://www.bbc.co.uk/wwscripts/flag">\x3C/script>');
+    }
+    /*]]>*/
+</script>                           <script type="text/javascript">         /*<![CDATA[*/
+    if (typeof bbcdotcom.flag == 'undefined' || bbcdotcom.flag.a != 1) {
+                bbcdotcom.data.a = 0;
+    }
+</script>
+                <script type="text/javascript">
+            /*<![CDATA[*/
+            if(bbcdotcom.data.a == 1 || bbcdotcom.data.b == 1) {
+                document.write('<link rel="stylesheet" type="text/css" href="http://static.bbci.co.uk/bbcdotcom/0.3.237/style/3pt_ads.css" />');document.write('<script type="text/javascript" src="http://static.bbci.co.uk/bbcdotcom/0.3.237/script/bbccom.js">\x3C/script>');            }
+            /*]]>*/
+        </script>                                   <script type="text/javascript">                 /*<![CDATA[*/
+            if (bbcdotcom.data.a == 1 || bbcdotcom.data.b == 1) {
+                                BBC.adverts.setData(bbcdotcom.data);
+                bbcdotcom.config.setAdsEnabled(bbcdotcom.data.a);
+                bbcdotcom.config.setAnalyticsEnabled(bbcdotcom.data.b);
+            }
+            if (bbcdotcom.data.a == 1) {
+                                (function(){
+                    var zoneFile = "3pt_zone_file";
+
+                    bbcdotcom.objects('page', 'create', bbcdotcom);
+                                        
+                                                            BBC.adverts.setScriptRoot("http://static.bbci.co.uk/bbcdotcom/0.3.237/script/");
+                    BBC.adverts.setImgRoot("http://static.bbci.co.uk/bbcdotcom/0.3.237/img/");
+                    BBC.adverts.init({
+                        domain: "www.bbc.com",
+                        location: window.location.pathname,
+                        zoneVersion: zoneFile,
+                        zoneAuto: false,
+                        siteAuto: false,
+                        keywordsAuto: false,
+                        zoneReferrer: document.referrer
+                    });
+                })();
+                if(typeof bbcdotcom !== 'undefined' && typeof bbcdotcom.survey !== 'undefined' && typeof bbcdotcom.survey.init === 'function') {
+                    bbcdotcom.survey.init();
+                }
+            }
+            /*]]>*/
+        </script>
+       <link rel="canonical" href="http://www.bbc.com/sport/football/tables" /> <link rel="alternate" hreflang="en" href="http://www.bbc.com/sport/football/tables" /> <link rel="alternate" hreflang="en-gb" href="http://www.bbc.co.uk/sport/football/tables" />  <!--[if lte IE 6]> <link type="text/css" href="http://static.bbci.co.uk/sport/2.7.238/desktop/styles/ie6.css" rel="stylesheet"/> <![endif]--> <!--[if IE 7]> <link type="text/css" href="http://static.bbci.co.uk/sport/2.7.238/desktop/styles/ie7.css" rel="stylesheet"/> <![endif]--> <style type="text/css" media="screen"> .link-block { width: 100%; background-color: #FFCCCC; font-family: sans-serif; font-size: 1.2em; position: fixed; bottom: 0; } .link-block ul { text-align:center; margin: 0 auto; } .link-block li { display: inline-block; margin: 8px 10px; padding: 4px; } </style>     <!--[if lt IE 9]> <script src="http://static.bbci.co.uk/onesport/2.6.342/modules/vendor/html5shiv.js"></script> <![endif]-->  <script type="text/javascript"> (function (window) { window.onesport = {}; }(window)); </script> <!--[if IE 7]> <script type="text/javascript">onesport.isIE7 = true;</script> <![endif]--> <!--[if IE 8]> <script type="text/javascript">onesport.isIE8 = true;</script> <![endif]--> <script type="text/javascript"> (function (onesport) { onesport.enhanced = (onesport.isIE8 || ('addEventListener' in window && 'querySelector' in document && 'localStorage' in window)); onesport.config = {"staticPrefix":"http:\/\/static.bbci.co.uk\/onesport\/2.6.342","inlineJs":["compiled\/inline-desktop"],"env":"live"}; onesport.moduleJs = []; onesport.currentBreakpoint = 'wide'; var docWriteScriptTag = function (path) { document.write('<script type="text/javascript" src="' + onesport.config.staticPrefix + '/js/' + path + '.js"><' + '/script>'); }, i, iLimit; for (i = 0, iLimit = onesport.config.inlineJs.length; i < iLimit; i++) { docWriteScriptTag(onesport.config.inlineJs[i]); }  define('config', function () { return onesport.config; }); define('onesport', function () { return onesport; }); }(onesport)); </script>        <!--#set var="PAL_NAV_CSS_SUCCESS" value="1" --> <link rel="stylesheet" href="http://static.bbci.co.uk/onesport/2.6.342/css/compiled/desktop-nav.css">    <script type="text/javascript"> require( {baseUrl: "http://static.bbci.co.uk/sport/2.7.238/desktop/modules/"}, ["fixturesfilter", "competitiontable", "last_ten_games_tooltip"], function(fixturesFilter, competitionTable, tooltips) { fixturesFilter.init('http://polling.bbc.co.uk', '20140408', '', '118996114','tables'); competitionTable.init(); tooltips.init('.last-10-games'); } ); </script>                         </head> <body class="sport disable-wide-advert">        <!-- BBCDOTCOM body first -->
+                <script type="text/javascript">BBC.adverts.write("wallpaper",false);</script>
+        <script type="text/javascript">
+            /*<![CDATA[*/
+            body= document.getElementsByTagName('body');
+            aTags = document.getElementsByTagName('a');
+            if('undefined' != typeof aTags && 'undefined' != typeof aTags[0] && -1 !== aTags[0].href.indexOf('http://ad.doubleclick.net')) {
+                body[0].removeChild(aTags[0]);
+            }
+            /*]]>*/
+        </script>
+      <script type="text/javascript">/*<![CDATA[*/ bbcFlagpoles_istats = 'ON'; istatsTrackingUrl = '//sa.bbc.co.uk/bbc/bbc/s?name=sport.football.league.league_tables.page&app_version=2.7.238&page_type=automated-index&sp=football&sp_league=League+Tables&pal_route=footballTable&ml_name=barlesque&app_type=web&language=en-GB&ml_version=0.17.3&pal_webapp=sport&prod_name=sport&app_name=sport'; if (window.istats_countername) { istatsTrackingUrl = istatsTrackingUrl.replace(/([?&]name=)[^&]+/ig, '$1' + istats_countername); } (function() { if ( /\bIDENTITY=/.test(document.cookie) ) { istatsTrackingUrl += '&bbc_identity=1'; } var c = (document.cookie.match(/\bckns_policy=(\d\d\d)/)||[]).pop() || ''; istatsTrackingUrl += '&bbc_mc=' + (c? 'ad'+c.charAt(0)+'ps'+c.charAt(1)+'pf'+c.charAt(2) : 'not_set'); if ( /\bckns_policy=\d\d0/.test(document.cookie) ) { istatsTrackingUrl += '&ns_nc=1'; } var screenWidthAndHeight = 'unavailable'; if (window.screen && screen.width && screen.height) { screenWidthAndHeight = screen.width + 'x' + screen.height; } istatsTrackingUrl += ('&screen_resolution=' + screenWidthAndHeight); istatsTrackingUrl += '&blq_s=3.5&blq_r=3.5&blq_v=default-worldwide'; })(); /*]]>*/</script>  <!-- Begin iStats 20100118 (UX-CMC 1.1009.3) --> <script type="text/javascript">/*<![CDATA[*/ (function() { window.istats || (istats = {}); var cookieDisabled = (document.cookie.indexOf('NO-SA=') != -1), hasCookieLabels = (document.cookie.indexOf('sa_labels=') != -1), hasClickThrough = /^#sa-(.*?)(?:-sa(.*))?$/.test(document.location.hash), runSitestat = !cookieDisabled && !hasCookieLabels && !hasClickThrough && !istats._linkTracked; if (runSitestat && bbcFlagpoles_istats === 'ON') { sitestat(istatsTrackingUrl); } else { window.ns_pixelUrl = istatsTrackingUrl; /* used by Flash library to track */ } function sitestat(n){var j=document,f=j.location,b="";if(j.cookie.indexOf("st_ux=")!=-1){var k=j.cookie.split(";");var e="st_ux",h=document.domain,a="/";if(typeof ns_!="undefined"&&typeof ns_.ux!="undefined"){e=ns_.ux.cName||e;h=ns_.ux.cDomain||h;a=ns_.ux.cPath||a}for(var g=0,f=k.length;g<f;g++){var m=k[g].indexOf("st_ux=");if(m!=-1){b="&"+unescape(k[g].substring(m+6))}}document.cookie=e+"=; expires="+new Date(new Date().getTime()-60).toGMTString()+"; path="+a+"; domain="+h}ns_pixelUrl=n;n=ns_pixelUrl+"&ns__t="+(new Date().getTime())+"&ns_c="+((j.characterSet)?j.characterSet:j.defaultCharset)+"&ns_ti="+escape(j.title)+b+"&ns_jspageurl="+escape(f&&f.href?f.href:j.URL)+"&ns_referrer="+escape(j.referrer);if(n.length>2000&&n.lastIndexOf("&")){n=n.substring(0,n.lastIndexOf("&")+1)+"ns_cut="+n.substring(n.lastIndexOf("&")+1,n.lastIndexOf("=")).substring(0,40)}(j.images)?new Image().src=n:j.write('<p><i'+'mg src="'+n+'" height="1" width="1" alt="" /></p>')}; })(); /*]]>*/</script> <noscript><p style="position: absolute; top: -999em;"><img src="//sa.bbc.co.uk/bbc/bbc/s?name=sport.football.league.league_tables.page&amp;app_version=2.7.238&amp;page_type=automated-index&amp;sp=football&amp;sp_league=League+Tables&amp;pal_route=footballTable&amp;ml_name=barlesque&amp;app_type=web&amp;language=en-GB&amp;ml_version=0.17.3&amp;pal_webapp=sport&amp;prod_name=sport&amp;app_name=sport&amp;blq_s=3.5&amp;blq_r=3.5&amp;blq_v=default-worldwide" height="1" width="1" alt="" /></p></noscript> <!-- End iStats (UX-CMC) -->   <div id="blq-global"> <noscript> <div id="blq-no-js-banner"> <p>For a better experience on your device, try our <a href="http://m.bbc.co.uk">mobile site</a>.</p> </div> </noscript> <div id="blq-pre-mast" lang="en-GB"> <!-- Pre mast --> 
+<!-- BBCDOTCOM leaderboard template:client-side journalismVariant: false ipIsAdvertiseCombined: true adsEnabled: true showDotcom: true flagpole: ON showAdAboveBlq: true blqLeaderboardAd: true -->
+ </div> </div>  <script type="text/html" id="blq-bbccookies-tmpl"><![CDATA[ <div id="bbccookies-prompt" class="bbccookies-w"> <h2> Cookies on the BBC website </h2> <p> We use cookies to ensure that we give you the best experience on our website.<span class="bbccookies-international-message"> We also use cookies to ensure we show you advertising that is relevant to you.</span> If you continue without changing your settings, we'll assume that you are happy to receive all cookies on the BBC website. However, if you would like to, you can <a href="/privacy/cookies/managing/cookie-settings.html">change your cookie settings</a> at any time. </p> <ul> <li id="bbccookies-continue"> <button type="button" id="bbccookies-continue-button">Continue</button> </li> <li id="bbccookies-more"><a href="/privacy/cookies/bbc">Find out more</a></li></ul> </div> ]]></script> <script type="text/javascript">/*<![CDATA[*/ (function(){if(bbccookies._showPrompt()){var i=document,b=i.getElementById("blq-pre-mast"),f=i.getElementById("blq-global"),h=i.getElementById("blq-container"),c=i.getElementById("blq-bbccookies-tmpl"),a,g,e;if(b&&i.createElement){a=i.createElement("div");a.id="bbccookies";e=c.innerHTML;e=e.replace("<"+"![CDATA[","").replace("]]"+">","");a.innerHTML=e;if(f){f.insertBefore(a,b)}else{h.insertBefore(a,b)}g=i.getElementById("bbccookies-continue-button");g.onclick=function(){a.parentNode.removeChild(a);return false};bbccookies._setPolicy()}}})(); /*]]>*/</script>  <div id="blq-masthead" class="blq-clearfix blq-mast-bg-white blq-masthead-focus blq-lang-en blq-ltr"> <span id="blq-mast-background"><span></span></span>  <div id="blq-mast" class="blq-rst">  <div id="blq-mast-bar" class="blq-masthead-container blq-default-worldwide"> <div id="blq-blocks"> <a href="/" hreflang="en-GB"> <abbr title="British Broadcasting Corporation" class="blq-home"> <img src="http://static.bbci.co.uk/frameworks/barlesque/2.60.7/desktop/3.5/img/blq-blocks_grey_alpha.png" alt="BBC" width="84" height="24" /> </abbr> </a> </div> <div id="blq-acc-links"> <h2 id="page-top">Accessibility links</h2> <ul>  <li><a href="#blq-content">Skip to content</a></li>  <li><a href="#blq-local-nav">Skip to local navigation</a></li>  <li><a href="/accessibility/">Accessibility Help</a></li> </ul> </div> <div id="blq-sign-in" class="blq-gel">  </div> <div id="blq-nav"> <h2>BBC navigation</h2>     <ul id="blq-nav-main">   <li id="blq-nav-news"> <a href="http://www.bbc.com/news/">News</a> </li>    <li id="blq-nav-sport"> <a href="http://www.bbc.co.uk/sport/">Sport</a> </li>    <li id="blq-nav-weather"> <a href="http://www.bbc.co.uk/weather/">Weather</a> </li>    <li id="blq-nav-capital"> <a href="http://www.bbc.com/capital/">Capital</a> </li>    <li id="blq-nav-future"> <a href="http://www.bbc.com/future/">Future</a> </li>    <li id="blq-nav-shop"> <a href="http://shop.bbc.com/">Shop</a> </li>    <li id="blq-nav-tv"> <a href="/tv/">TV</a> </li>    <li id="blq-nav-radio"> <a href="/radio/">Radio</a> </li>    <li id="blq-nav-more"> <a href="/a-z/">More&hellip;</a> </li>   </ul>   <div id="blq-nav-search"> <form method="get" action="http://search.bbc.co.uk/search" accept-charset="utf-8" id="blq-search-form"> <div>  <input type="hidden" name="go" value="toolbar" />  <input type="hidden" name="uri" value="/sport/football/tables" />    <input type="hidden" name="scope" value="sport" />  <label for="blq-search-q" class="blq-hide">Search term:</label> <input id="blq-search-q" type="text" name="q" value="" maxlength="128" /> <button id="blq-search-btn" type="submit"><span><img src="http://static.bbci.co.uk/frameworks/barlesque/2.60.7/desktop/3.5/img/blq-search_grey_alpha.png" width="13" height="13" alt="Search"/></span></button> </div> </form> </div>  </div> </div> </div> </div> <div id="blq-container-outer" class="blq-default-worldwide blq-ltr" >  <div id="blq-container" class="blq-lang-en blq-dotcom"> <div id="blq-container-inner" lang="en">   <div id="blq-main" class="blq-clearfix">                 <script type="text/javascript"> if (onesport.isIE7) { document.getElementsByTagName('body')[0].className += ' ie7'; } else if (onesport.isIE8) { document.getElementsByTagName('body')[0].className += ' ie8'; } document.getElementById('blq-main').className += ' bp-wide'; if (onesport.enhanced && onesport.features.fontFace()) { document.getElementById('blq-main').className += ' font-face';  } </script>   <div class="nav-top-sponsor">                     <div id="bbccom_sponsor_banner" class="bbccom_display_none bbccom_sponsor">
+            <span class="bbccom_sponsor_text bbccom_text">IN ASSOCIATION WITH</span>
+            <script type="text/javascript">BBC.adverts.write("sponsor_banner",false);</script>
+        </div>
+        <script type="text/javascript">BBC.adverts.show("sponsor_banner");</script>
+     </div>         <!--#set var="PAL_NAV_HTML_SUCCESS" value="1" --> <div class=" nav-top nav-top--not-full-width ">    <header class=" header  " role="banner" data-istats-container="header" > <div class="header__wrap"> <a class="header__logo" href="/sport" data-istats-container="sport-logo"> <span class="header__font-icon"></span> <span class="ico ico-sport header__image-icon"></span> <span class="vh">BBC </span><span class="header__sport-text">Sport</span><span class="vh"> Home Page </span> </a>     <a href="/sport/football" class="header__section">Football</a>   <a class="header__all-sports-button" href="/sport/all-sports"> <span aria-hidden="true" class="ico ico-burger header__burger"></span><!-- --><span class="header__all-sports-text">All Sport</span> </a> </div> </header>     <nav class="primary-nav" role="navigation" data-istats-container="primary-nav"> <div class="primary-nav__items-wrap"> <ul class="primary-nav__items">   <li class=" primary-nav__item primary-nav__item--pinned primary-nav__item--all-sports  primary-nav__item--with-icon " aria-hidden="true" > <a href="/sport/all-sports" class="primary-nav__link">  <span aria-hidden="true" class="ico ico-burger primary-nav__item-icon"></span><span class="primary-nav__link-text">All Sport</span> </a> </li>   <li class=" primary-nav__item  primary-nav__item--first "> <a href="/sport" class="primary-nav__link"><span class="primary-nav__link-text">Home</span></a> </li>  <li class=" primary-nav__item  primary-nav__item--active  primary-nav__item--full-highlight    "> <a href="/sport/football" class="primary-nav__link"><span class="primary-nav__link-text">Football</span></a> </li>  <li class=" primary-nav__item   "> <a href="/sport/formula1" class="primary-nav__link"><span class="primary-nav__link-text">Formula 1</span></a> </li>  <li class=" primary-nav__item   "> <a href="/sport/cricket" class="primary-nav__link"><span class="primary-nav__link-text">Cricket</span></a> </li>  <li class=" primary-nav__item   "> <a href="/sport/rugby-union" class="primary-nav__link"><span class="primary-nav__link-text">Rugby U</span></a> </li>  <li class=" primary-nav__item   "> <a href="/sport/tennis" class="primary-nav__link"><span class="primary-nav__link-text">Tennis</span></a> </li>  <li class=" primary-nav__item   "> <a href="/sport/golf" class="primary-nav__link"><span class="primary-nav__link-text">Golf</span></a> </li>  <li class=" primary-nav__item   "> <a href="/sport/athletics" class="primary-nav__link"><span class="primary-nav__link-text">Athletics</span></a> </li>  <li class=" primary-nav__item   "> <a href="/sport/cycling" class="primary-nav__link"><span class="primary-nav__link-text">Cycling</span></a> </li>  </ul> </div> </nav>     <div class="primary-nav-flyout__relative-wrapper"> <nav class="primary-nav-flyout" role="navigation" data-istats-container="primary-nav-flyout"> <div class="primary-nav-flyout__wrap clearfix">  <div class=" primary-nav-flyout__section primary-nav-flyout__section--open primary-nav-flyout__section--contains-only-primaries  ">  <ul class="primary-nav-flyout__items">  <li class=" primary-nav-flyout__item  "> <a href="/sport" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">BBC Sport Home</span> </a> </li>  <li class=" primary-nav-flyout__item primary-nav-flyout__item--active "> <a href="/sport/football" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Football</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/formula1" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Formula 1</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/cricket" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Cricket</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/rugby-union" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Rugby Union</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/tennis" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Tennis</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/golf" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Golf</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/athletics" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Athletics</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/cycling" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Cycling</span> </a> </li>   </ul> </div>  <div class=" primary-nav-flyout__section  primary-nav-flyout__section--main-section ">   <h3 tabindex="0" role="link" class="primary-nav-flyout__section-title">  <span class="primary-nav-flyout__section-title-text">A-Z Sports</span> <span aria-hidden="true" class="ico primary-nav-flyout__chevron ico-chevron-down"></span>  </h3>   <ul class="primary-nav-flyout__items">  <li class=" primary-nav-flyout__item  "> <a href="/sport/athletics" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Athletics</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/boxing" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Boxing</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/cricket" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Cricket</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/cycling" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Cycling</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/disability-sport" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Disability Sport</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/football" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Football</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/formula1" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Formula 1</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/northern-ireland/gaelic-games" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Gaelic Games</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/golf" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Golf</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/horse-racing" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Horse Racing</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/motogp" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">MotoGP</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/olympics" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Olympic Sports</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/rugby-league" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Rugby League</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/rugby-union" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Rugby Union</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/snooker" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Snooker</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/swimming" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Swimming</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/tennis" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Tennis</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/winter-sports" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Winter Sports</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/all-sports" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">More Sports</span> </a> </li>   </ul> </div>  <div class=" primary-nav-flyout__section   ">   <h3 tabindex="0" role="link" class="primary-nav-flyout__section-title">  <span class="primary-nav-flyout__section-title-text">Events</span> <span aria-hidden="true" class="ico primary-nav-flyout__chevron ico-chevron-down"></span>  </h3>   <ul class="primary-nav-flyout__items">  <li class=" primary-nav-flyout__item  "> <a href="/sport/commonwealth-games/2014" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Glasgow 2014</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/football/world-cup/2014" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">World Cup 2014</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/disability-sport" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Winter Paralympics</span> </a> </li>   </ul> </div>  <div class=" primary-nav-flyout__section   ">   <h3 tabindex="0" role="link" class="primary-nav-flyout__section-title">  <span class="primary-nav-flyout__section-title-text">World Sport</span> <span aria-hidden="true" class="ico primary-nav-flyout__chevron ico-chevron-down"></span>  </h3>   <ul class="primary-nav-flyout__items">  <li class=" primary-nav-flyout__item  "> <a href="/sport/football/european" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">European Football</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/football/champions-league" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Champions League</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/football/african" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">African Football</span> </a> </li>   </ul> </div>  <div class=" primary-nav-flyout__section   ">   <h3 tabindex="0" role="link" class="primary-nav-flyout__section-title">  <span class="primary-nav-flyout__section-title-text">Around the UK</span> <span aria-hidden="true" class="ico primary-nav-flyout__chevron ico-chevron-down"></span>  </h3>   <ul class="primary-nav-flyout__items">  <li class=" primary-nav-flyout__item  "> <a href="/sport/england" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">England</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/scotland" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Scotland</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/wales" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Wales</span> </a> </li>  <li class=" primary-nav-flyout__item  "> <a href="/sport/northern-ireland" class="primary-nav-flyout__link"> <span class="primary-nav-flyout__link-text">Northern Ireland</span> </a> </li>   </ul> </div>  </div> </nav> </div> <script type="text/javascript"> onesport.moduleJs.push( function () { require( ['module/nav-3/columniser/controller', 'module/nav-3/primary-nav-flyout/controller'], function (columniserController, flyoutController) { columniserController.init(); flyoutController.init(); } ); require(['module/nav-3/primary-nav/controller'], function (primaryNavController) { primaryNavController.init(); }); require(['module/nav-3/primary-nav-flyout-sections/controller'], function (sectionsController) { sectionsController.init(); }); } ); </script>     <nav class=" secondary-nav secondary-nav--has-shortcuts-or-items-or-more-than-one-crumb  " role="navigation" data-istats-container="secondary-nav" data-shortcuts-title="Football" > <div class="secondary-nav__items-wrap"> <ul class="secondary-nav__items secondary-nav__items--not-shortcuts secondary-nav__items--more-button-space-saver"> <script type="text/javascript"> (function(onesport){ if (onesport.enhanced && onesport.currentBreakpoint !== 'compact' && onesport.currentBreakpoint !== 'small' && !onesport.primaryNavActiveWrapped()) { document.write('<style>.secondary-nav__item--dynamic-crumb--styled-inline { display: none; }</style>'); } }(window.onesport)); </script>    <li class=" secondary-nav__item secondary-nav__item--crumb secondary-nav__item--dynamic-crumb secondary-nav__item--dynamic-crumb--styled-inline secondary-nav__item--lowest-crumb  ">   <a class="secondary-nav__link" href="#top-link"  data-href="/sport/football"  > <span class="secondary-nav__link-text">Football</span> <span aria-hidden="true" class="ico secondary-nav__chevron ico-chevron-down"></span> </a>   </li>     <li class=" secondary-nav__item  secondary-nav__item--first-non-crumb "> <a class="secondary-nav__link" href="/sport/football/live-scores"> <span class="secondary-nav__link-text">Live Scores</span> </a> </li>   <li class=" secondary-nav__item   "> <a class="secondary-nav__link" href="/sport/football/results"> <span class="secondary-nav__link-text">Results</span> </a> </li>   <li class=" secondary-nav__item   "> <a class="secondary-nav__link" href="/sport/football/fixtures"> <span class="secondary-nav__link-text">Fixtures</span> </a> </li>   <li class=" secondary-nav__item secondary-nav__item--active  "> <a class="secondary-nav__link" href="/sport/football/tables"> <span class="secondary-nav__link-text">Tables</span> </a> </li>   <li class=" secondary-nav__item   "> <a class="secondary-nav__link" href="/sport/football/gossip"> <span class="secondary-nav__link-text">Gossip</span> </a> </li>   <li class=" secondary-nav__item   "> <a class="secondary-nav__link" href="/sport/football/transfers"> <span class="secondary-nav__link-text">Transfers</span> </a> </li>   <li class=" secondary-nav__item   "> <a class="secondary-nav__link" href="/sport/football/teams"> <span class="secondary-nav__link-text">All Teams</span> </a> </li>   <li class=" secondary-nav__item   "> <a class="secondary-nav__link" href="/sport/football/leagues-competitions"> <span class="secondary-nav__link-text">Leagues &amp; Cups</span> </a> </li>   <li class=" secondary-nav__item   "> <a class="secondary-nav__link" href="/sport/football/world-cup/2014"> <span class="secondary-nav__link-text">World Cup 2014</span> </a> </li>   <li class=" secondary-nav__item   "> <a class="secondary-nav__link" href="/sport/football/european"> <span class="secondary-nav__link-text">European</span> </a> </li>   <li class=" secondary-nav__item   "> <a class="secondary-nav__link" href="/sport/football/african"> <span class="secondary-nav__link-text">African</span> </a> </li>   </ul> <ul class="secondary-nav__items secondary-nav__items--shortcuts">  </ul> </div> </nav> <script type="text/javascript"> onesport.moduleJs.push( function () { require(['module/nav-3/dynamic-crumb/controller'], function (navDynamicCrumbController) { navDynamicCrumbController.init(); }); require(['module/nav-3/more/controller'], function (navMoreController) { navMoreController.init(); }); } ); </script>       <div class="secondary-nav-flyout__relative-wrapper"> <nav class="secondary-nav-flyout clearfix" data-istats-container="secondary-nav-flyout" data-lowest-crumb-label="Football">   <div class="secondary-nav-flyout__columns clearfix">  <div class=" secondary-nav-flyout__column secondary-nav-flyout__column--left "> <ul class="secondary-nav-flyout__items">  <li class=" secondary-nav-flyout__item  ">  <a href="/sport/football/live-scores" class="secondary-nav-flyout__item-link">Live Scores</a>  </li>  <li class=" secondary-nav-flyout__item  ">  <a href="/sport/football/results" class="secondary-nav-flyout__item-link">Results</a>  </li>  <li class=" secondary-nav-flyout__item  ">  <a href="/sport/football/fixtures" class="secondary-nav-flyout__item-link">Fixtures</a>  </li>  <li class=" secondary-nav-flyout__item secondary-nav-flyout__item--active ">  <a href="/sport/football/tables" class="secondary-nav-flyout__item-link">Tables</a>  </li>  <li class=" secondary-nav-flyout__item  ">  <a href="/sport/football/gossip" class="secondary-nav-flyout__item-link">Gossip</a>  </li>  <li class=" secondary-nav-flyout__item  ">  <a href="/sport/football/transfers" class="secondary-nav-flyout__item-link">Transfers</a>  </li>  </ul> </div>  <div class=" secondary-nav-flyout__column  "> <ul class="secondary-nav-flyout__items">  <li class=" secondary-nav-flyout__item  ">  <a href="/sport/football/teams" class="secondary-nav-flyout__item-link">All Teams</a>  </li>  <li class=" secondary-nav-flyout__item  ">  <a href="/sport/football/leagues-competitions" class="secondary-nav-flyout__item-link">Leagues &amp; Cups</a>  </li>  <li class=" secondary-nav-flyout__item  ">  <a href="/sport/football/world-cup/2014" class="secondary-nav-flyout__item-link">World Cup 2014</a>  </li>  <li class=" secondary-nav-flyout__item  ">  <a href="/sport/football/european" class="secondary-nav-flyout__item-link">European</a>  </li>  <li class=" secondary-nav-flyout__item  ">  <a href="/sport/football/african" class="secondary-nav-flyout__item-link">African</a>  </li>  <li class=" secondary-nav-flyout__item  ">  <a href="/sport/football" class="secondary-nav-flyout__item-link">Football Home</a>  </li>  </ul> </div>  </div>   </nav> </div> <script type="text/javascript"> onesport.moduleJs.push( function () { require(['module/nav-3/secondary-nav-flyout/controller'], function (flyoutController) { flyoutController.init(); }); } ); </script>    </div>                            <div id="bbccom_leaderboard" class="bbccom_display_none bbccom_leaderboard">
+        <script type="text/javascript">BBC.adverts.write("leaderboard", true);</script>
+    </div>
+    <script type="text/javascript">BBC.adverts.show("leaderboard");</script>
+     <div id="blq-content" class="stats"> <div class="headline-wrapper"> <h1>Football Tables</h1>  <div class="share-tools-toolbar blq-clearfix"> <div class="share-tools-container"> <div class="bbc-st bbc-st-slim bbc-st-colour bbc-st-light bbc-st-disable-counts"> <a href="/modules/sharetools/share?url=http://www.bbc.com/sport/football/tables&amp;appId=sport">Share this page</a> </div>  <div class="share-help"> <ul> <li><a href="?print=true" class="icon-print">Print page</a></li> </ul> </div>  </div>  </div>  </div> <div class="stats-body tables-header"> <ul id="last-ten-games-key" class="multi-table-key">
+    <li>Win</li><li class="key-won"></li>
+    <li>Draw</li><li class="key-drawn"></li>
+    <li>Loss</li><li class="key-lost"></li>
+</ul>
+   <noscript>  <div class="drop-down-filter" id="filter-fixtures-no-js"> <form method="get" id="filter-nav" action="/sport/football/tables"> <fieldset> <label for="group-drop-down">Show me:</label> <select id="group-drop-down" name="filter"> <option value="">Please select</option>  <optgroup label="English">    <option value="competition-118996114" selected="selected"> Premier League </option>      <option value="competition-118996115" > Championship </option>      <option value="competition-118996116" > League One </option>      <option value="competition-118996117" > League Two </option>      <option value="competition-118996118" > Football Conference </option>      <option value="competition-118996307" > Conference North </option>      <option value="competition-118996308" > Conference South </option>                 </optgroup>  <optgroup label="Scottish">    <option value="competition-118996176" > Scottish Premiership </option>      <option value="competition-118996177" > Scottish Championship </option>      <option value="competition-118996178" > Scottish League One </option>      <option value="competition-118996179" > Scottish League Two </option>      <option value="competition-118999031" > Highland League </option>      <option value="competition-119003997" > Lowland League </option>           </optgroup>  <optgroup label="Welsh">    <option value="competition-118996207" > Welsh Premier League </option>         </optgroup>  <optgroup label="Irish">    <option value="competition-118996238" > Irish Premiership </option>        <option value="competition-118996240" > League of Ireland Premier </option>     </optgroup>  <optgroup label="International">    <option value="competition-119001880" > World Cup </option>      <option value="competition-119001881" > World Cup Qualifying - European </option>      <option value="competition-119001913" > Confederations Cup </option>      <option value="competition-118999062" > Women's European Championship </option>      <option value="competition-119001914" > Africa Cup of Nations </option>      <option value="competition-119002005" > Euro Under-21 Championship </option>      <option value="competition-119002004" > Euro Under-21 Qualifying </option>       </optgroup>  <optgroup label="European">    <option value="competition-118999958" > Champions League </option>      <option value="competition-118999989" > Europa League </option>        <option value="competition-119000919" > Austrian Bundesliga </option>      <option value="competition-119000924" > Belgian Pro League </option>      <option value="competition-119000950" > Danish Superliga </option>      <option value="competition-119001012" > Dutch Eredivisie </option>      <option value="competition-119000955" > Finnish Veikkausliiga </option>      <option value="competition-119000981" > French Ligue 1 </option>      <option value="competition-119000986" > German Bundesliga </option>      <option value="competition-119001136" > Greek Superleague </option>      <option value="competition-119001017" > Italian Serie A </option>      <option value="competition-119001043" > Norwegian Tippeligaen </option>      <option value="competition-119001048" > Portuguese Primeira Liga </option>      <option value="competition-119001074" > Spanish La Liga </option>      <option value="competition-119001079" > Swedish Allsvenskan </option>      <option value="competition-119001105" > Swiss Super League </option>      <option value="competition-119001110" > Turkish Super Lig </option>     </optgroup>  <optgroup label="Women">    <option value="competition-119003989" > Women's Super League </option>          <option value="competition-999999991" > Women's Premier North </option>      <option value="competition-999999992" > Women's Premier South </option>     </optgroup>  </select> <input id="filter-nav-submit" type="submit" value="Update" /> </fieldset>   </form> </div>  </noscript> <div class="drop-down-filter" id="filter-fixtures"> <form method="get" id="filter-nav"> <fieldset> <label for="group-drop-down">Show me:</label>    <select id="uk-group-drop-down" name="filter"> <option value="">UK &amp; Ireland Competitions</option>   <optgroup label="English" id="optgroup-1" >   <option value="competition-118996114" selected="selected" > Premier League </option>     <option value="competition-118996115"  > Championship </option>     <option value="competition-118996116"  > League One </option>     <option value="competition-118996117"  > League Two </option>     <option value="competition-118996118"  > Football Conference </option>     <option value="competition-118996307"  > Conference North </option>     <option value="competition-118996308"  > Conference South </option>           </optgroup>  <optgroup label="Scottish" id="optgroup-2" >   <option value="competition-118996176"  > Scottish Premiership </option>     <option value="competition-118996177"  > Scottish Championship </option>     <option value="competition-118996178"  > Scottish League One </option>     <option value="competition-118996179"  > Scottish League Two </option>     <option value="competition-118999031"  > Highland League </option>     <option value="competition-119003997"  > Lowland League </option>        </optgroup>  <optgroup label="Welsh" id="optgroup-3" >   <option value="competition-118996207"  > Welsh Premier League </option>       </optgroup>  <optgroup label="Irish" id="optgroup-4" >   <option value="competition-118996238"  > Irish Premiership </option>      <option value="competition-118996240"  > League of Ireland Premier </option>     </optgroup>  <optgroup label="Women" id="optgroup-7" >   <option value="competition-119003989"  > Women's Super League </option>       <option value="competition-999999991"  > Women's Premier North </option>     <option value="competition-999999992"  > Women's Premier South </option>     </optgroup>  </select>  <span>OR</span>   <select id="int-group-drop-down" name="filter"> <option value="">European &amp; International</option>   <optgroup label="International" id="optgroup-6" >   <option value="competition-119001880"  > World Cup </option>     <option value="competition-119001881"  > World Cup Qualifying - European </option>     <option value="competition-119001913"  > Confederations Cup </option>     <option value="competition-118999062"  > Women's European Championship </option>     <option value="competition-119001914"  > Africa Cup of Nations </option>     <option value="competition-119002005"  > Euro Under-21 Championship </option>     <option value="competition-119002004"  > Euro Under-21 Qualifying </option>      </optgroup>  <optgroup label="European" id="optgroup-5" >   <option value="competition-118999958"  > Champions League </option>     <option value="competition-118999989"  > Europa League </option>      <option value="competition-119000919"  > Austrian Bundesliga </option>     <option value="competition-119000924"  > Belgian Pro League </option>     <option value="competition-119000950"  > Danish Superliga </option>     <option value="competition-119001012"  > Dutch Eredivisie </option>     <option value="competition-119000955"  > Finnish Veikkausliiga </option>     <option value="competition-119000981"  > French Ligue 1 </option>     <option value="competition-119000986"  > German Bundesliga </option>     <option value="competition-119001136"  > Greek Superleague </option>     <option value="competition-119001017"  > Italian Serie A </option>     <option value="competition-119001043"  > Norwegian Tippeligaen </option>     <option value="competition-119001048"  > Portuguese Primeira Liga </option>     <option value="competition-119001074"  > Spanish La Liga </option>     <option value="competition-119001079"  > Swedish Allsvenskan </option>     <option value="competition-119001105"  > Swiss Super League </option>     <option value="competition-119001110"  > Turkish Super Lig </option>     </optgroup>  </select>    <input id="filter-nav-submit" type="submit" value="Update" /> </fieldset>   </form> </div>  </div> <div id="table-data" role="main">  <div class="league-table full-table-wide"> <h2 class="table-header"> Barclays Premier League Table                      <div id="bbccom_sponsor_table-prem" class="bbccom_display_none bbccom_sponsor">
+            <span class="bbccom_sponsor_text bbccom_text">IN ASSOCIATION WITH</span>
+            <script type="text/javascript">BBC.adverts.write("sponsor_table-prem",false);</script>
+        </div>
+        <script type="text/javascript">BBC.adverts.show("sponsor_table-prem");</script>
+    </h2> <table class="table-stats" id="comp-118996114-CFBB82013S1R1" data-competition-slug="premier-league">
+    <caption>This table charts the Barclays Premier League teams</caption>
+    <thead>
+        <tr>
+            <th scope="col" class="statistics headstats"></th>
+            <th scope="col" class="position">Position</th>
+            <th scope="col" class="team-name">Team</th>
+            <th scope="col" class="played"><span><abbr title="Matches played">P</abbr></span></th>
+            <th scope="col" class="won"><abbr title="Matches won">W</abbr></th>
+            <th scope="col" class="drawn"><abbr title="Matches drawn">D</abbr></th>
+            <th scope="col" class="lost"><abbr title="Matches lost">L</abbr></th>
+            <th scope="col" class="for"><abbr title="Matches goals for">F</abbr></th>
+            <th scope="col" class="against"><abbr title="Matches goals against">A</abbr></th>
+            <th scope="col" class="goal-difference"><span><abbr title="Goal difference">GD</abbr></span></th>
+            <th scope="col" class="points"><span><abbr title="Points">Pts</abbr></span></th>
+            <th scope="col" class="last-10-games">Last 10 games <span>results</span></th>
+            <th scope="col" class="status"><span>Match </span>status</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <td colspan="9" class="full-table-link">
+
+                
+            </td>
+                        <td colspan="9" class="updated">Last updated 13 hours ago</td>
+        </tr>
+    </tfoot>
+    <tbody id="trc-20-premier-league-CFBB82013S1R1" data-full-entry-count="20">
+            <tr data-team-slug="liverpool" id="team-liverpool" class="team first">
+                <td class="statistics"></td>
+                  <td class='position'><span class='no-movement'>No movement</span> <span class='position-number'>1</span></td>                  <td class="team-name"><a href='/sport/football/teams/liverpool'>Liverpool</a></td>
+                <td class="played">33</td>
+
+                <td class="won"><span>23</span></td>
+                <td class="drawn">5</td>
+                <td class="lost">5</td>
+                <td class="for">90</td>
+                <td class="against">40</td>
+
+                <td class="goal-difference">50</td>
+                <td class="points">74</td>
+                <td class="last-10-games">
+                                    <ol><li title="Draw v West Brom 1 - 1 on 2nd February 2014" class="draw" data-result="1 - 1" data-against="West Brom" data-date="2nd February 2014"><span>Draw</span></li>
+<li title="Win v Arsenal 5 - 1 on 8th February 2014" class="win" data-result="5 - 1" data-against="Arsenal" data-date="8th February 2014"><span>Win</span></li>
+<li title="Win v Fulham 2 - 3 on 12th February 2014" class="win" data-result="2 - 3" data-against="Fulham" data-date="12th February 2014"><span>Win</span></li>
+<li title="Win v Swansea 4 - 3 on 23rd February 2014" class="win" data-result="4 - 3" data-against="Swansea" data-date="23rd February 2014"><span>Win</span></li>
+<li title="Win v Southampton 0 - 3 on 1st March 2014" class="win" data-result="0 - 3" data-against="Southampton" data-date="1st March 2014"><span>Win</span></li>
+<li title="Win v Man Utd 0 - 3 on 16th March 2014" class="win" data-result="0 - 3" data-against="Man Utd" data-date="16th March 2014"><span>Win</span></li>
+<li title="Win v Cardiff 3 - 6 on 22nd March 2014" class="win" data-result="3 - 6" data-against="Cardiff" data-date="22nd March 2014"><span>Win</span></li>
+<li title="Win v Sunderland 2 - 1 on 26th March 2014" class="win" data-result="2 - 1" data-against="Sunderland" data-date="26th March 2014"><span>Win</span></li>
+<li title="Win v Tottenham 4 - 0 on 30th March 2014" class="win" data-result="4 - 0" data-against="Tottenham" data-date="30th March 2014"><span>Win</span></li>
+<li title="Win v West Ham 1 - 2 on 6th April 2014" class="win" data-result="1 - 2" data-against="West Ham" data-date="6th April 2014"><span>Win</span></li></ol>                                </td>
+                <td class="status">
+                                            <a class="report" href="/sport/football/26807039">Report<span class="blq-hide"> of Liverpool&apos;s last match</span></a>                                    </td>
+        </tr>
+            <tr data-team-slug="chelsea" id="team-chelsea" class="team">
+                <td class="statistics"></td>
+                  <td class='position'><span class='no-movement'>No movement</span> <span class='position-number'>2</span></td>                  <td class="team-name"><a href='/sport/football/teams/chelsea'>Chelsea</a></td>
+                <td class="played">33</td>
+
+                <td class="won"><span>22</span></td>
+                <td class="drawn">6</td>
+                <td class="lost">5</td>
+                <td class="for">65</td>
+                <td class="against">24</td>
+
+                <td class="goal-difference">41</td>
+                <td class="points">72</td>
+                <td class="last-10-games">
+                                    <ol><li title="Win v Man City 0 - 1 on 3rd February 2014" class="win" data-result="0 - 1" data-against="Man City" data-date="3rd February 2014"><span>Win</span></li>
+<li title="Win v Newcastle 3 - 0 on 8th February 2014" class="win" data-result="3 - 0" data-against="Newcastle" data-date="8th February 2014"><span>Win</span></li>
+<li title="Draw v West Brom 1 - 1 on 11th February 2014" class="draw" data-result="1 - 1" data-against="West Brom" data-date="11th February 2014"><span>Draw</span></li>
+<li title="Win v Everton 1 - 0 on 22nd February 2014" class="win" data-result="1 - 0" data-against="Everton" data-date="22nd February 2014"><span>Win</span></li>
+<li title="Win v Fulham 1 - 3 on 1st March 2014" class="win" data-result="1 - 3" data-against="Fulham" data-date="1st March 2014"><span>Win</span></li>
+<li title="Win v Tottenham 4 - 0 on 8th March 2014" class="win" data-result="4 - 0" data-against="Tottenham" data-date="8th March 2014"><span>Win</span></li>
+<li title="Loss v Aston Villa 1 - 0 on 15th March 2014" class="loss" data-result="1 - 0" data-against="Aston Villa" data-date="15th March 2014"><span>Loss</span></li>
+<li title="Win v Arsenal 6 - 0 on 22nd March 2014" class="win" data-result="6 - 0" data-against="Arsenal" data-date="22nd March 2014"><span>Win</span></li>
+<li title="Loss v Crystal Palace 1 - 0 on 29th March 2014" class="loss" data-result="1 - 0" data-against="Crystal Palace" data-date="29th March 2014"><span>Loss</span></li>
+<li title="Win v Stoke 3 - 0 on 5th April 2014" class="win" data-result="3 - 0" data-against="Stoke" data-date="5th April 2014"><span>Win</span></li></ol>                                </td>
+                <td class="status">
+                                            <a class="report" href="/sport/football/26796970">Report<span class="blq-hide"> of Chelsea&apos;s last match</span></a>                                    </td>
+        </tr>
+            <tr data-team-slug="manchester-city" id="team-manchester-city" class="team">
+                <td class="statistics"></td>
+                  <td class='position'><span class='no-movement'>No movement</span> <span class='position-number'>3</span></td>                  <td class="team-name"><a href='/sport/football/teams/manchester-city'>Man City</a></td>
+                <td class="played">31</td>
+
+                <td class="won"><span>22</span></td>
+                <td class="drawn">4</td>
+                <td class="lost">5</td>
+                <td class="for">84</td>
+                <td class="against">29</td>
+
+                <td class="goal-difference">55</td>
+                <td class="points">70</td>
+                <td class="last-10-games">
+                                    <ol><li title="Win v Cardiff 4 - 2 on 18th January 2014" class="win" data-result="4 - 2" data-against="Cardiff" data-date="18th January 2014"><span>Win</span></li>
+<li title="Win v Tottenham 1 - 5 on 29th January 2014" class="win" data-result="1 - 5" data-against="Tottenham" data-date="29th January 2014"><span>Win</span></li>
+<li title="Loss v Chelsea 0 - 1 on 3rd February 2014" class="loss" data-result="0 - 1" data-against="Chelsea" data-date="3rd February 2014"><span>Loss</span></li>
+<li title="Draw v Norwich 0 - 0 on 8th February 2014" class="draw" data-result="0 - 0" data-against="Norwich" data-date="8th February 2014"><span>Draw</span></li>
+<li title="Win v Stoke 1 - 0 on 22nd February 2014" class="win" data-result="1 - 0" data-against="Stoke" data-date="22nd February 2014"><span>Win</span></li>
+<li title="Win v Hull 0 - 2 on 15th March 2014" class="win" data-result="0 - 2" data-against="Hull" data-date="15th March 2014"><span>Win</span></li>
+<li title="Win v Fulham 5 - 0 on 22nd March 2014" class="win" data-result="5 - 0" data-against="Fulham" data-date="22nd March 2014"><span>Win</span></li>
+<li title="Win v Man Utd 0 - 3 on 25th March 2014" class="win" data-result="0 - 3" data-against="Man Utd" data-date="25th March 2014"><span>Win</span></li>
+<li title="Draw v Arsenal 1 - 1 on 29th March 2014" class="draw" data-result="1 - 1" data-against="Arsenal" data-date="29th March 2014"><span>Draw</span></li>
+<li title="Win v Southampton 4 - 1 on 5th April 2014" class="win" data-result="4 - 1" data-against="Southampton" data-date="5th April 2014"><span>Win</span></li></ol>                                </td>
+                <td class="status">
+                                            <a class="report" href="/sport/football/26797094">Report<span class="blq-hide"> of Man City&apos;s last match</span></a>                                    </td>
+        </tr>
+            <tr data-team-slug="arsenal" id="team-arsenal" class="team">
+                <td class="statistics"></td>
+                  <td class='position'><span class='no-movement'>No movement</span> <span class='position-number'>4</span></td>                  <td class="team-name"><a href='/sport/football/teams/arsenal'>Arsenal</a></td>
+                <td class="played">33</td>
+
+                <td class="won"><span>19</span></td>
+                <td class="drawn">7</td>
+                <td class="lost">7</td>
+                <td class="for">56</td>
+                <td class="against">40</td>
+
+                <td class="goal-difference">16</td>
+                <td class="points">64</td>
+                <td class="last-10-games">
+                                    <ol><li title="Win v Crystal Palace 2 - 0 on 2nd February 2014" class="win" data-result="2 - 0" data-against="Crystal Palace" data-date="2nd February 2014"><span>Win</span></li>
+<li title="Loss v Liverpool 5 - 1 on 8th February 2014" class="loss" data-result="5 - 1" data-against="Liverpool" data-date="8th February 2014"><span>Loss</span></li>
+<li title="Draw v Man Utd 0 - 0 on 12th February 2014" class="draw" data-result="0 - 0" data-against="Man Utd" data-date="12th February 2014"><span>Draw</span></li>
+<li title="Win v Sunderland 4 - 1 on 22nd February 2014" class="win" data-result="4 - 1" data-against="Sunderland" data-date="22nd February 2014"><span>Win</span></li>
+<li title="Loss v Stoke 1 - 0 on 1st March 2014" class="loss" data-result="1 - 0" data-against="Stoke" data-date="1st March 2014"><span>Loss</span></li>
+<li title="Win v Tottenham 0 - 1 on 16th March 2014" class="win" data-result="0 - 1" data-against="Tottenham" data-date="16th March 2014"><span>Win</span></li>
+<li title="Loss v Chelsea 6 - 0 on 22nd March 2014" class="loss" data-result="6 - 0" data-against="Chelsea" data-date="22nd March 2014"><span>Loss</span></li>
+<li title="Draw v Swansea 2 - 2 on 25th March 2014" class="draw" data-result="2 - 2" data-against="Swansea" data-date="25th March 2014"><span>Draw</span></li>
+<li title="Draw v Man City 1 - 1 on 29th March 2014" class="draw" data-result="1 - 1" data-against="Man City" data-date="29th March 2014"><span>Draw</span></li>
+<li title="Loss v Everton 3 - 0 on 6th April 2014" class="loss" data-result="3 - 0" data-against="Everton" data-date="6th April 2014"><span>Loss</span></li></ol>                                </td>
+                <td class="status">
+                                            <a class="report" href="/sport/football/26807037">Report<span class="blq-hide"> of Arsenal&apos;s last match</span></a>                                    </td>
+        </tr>
+            <tr data-team-slug="everton" id="team-everton" class="team divider">
+                <td class="statistics"></td>
+                  <td class='position'><span class='no-movement'>No movement</span> <span class='position-number'>5</span></td>                  <td class="team-name"><a href='/sport/football/teams/everton'>Everton</a></td>
+                <td class="played">32</td>
+
+                <td class="won"><span>18</span></td>
+                <td class="drawn">9</td>
+                <td class="lost">5</td>
+                <td class="for">52</td>
+                <td class="against">31</td>
+
+                <td class="goal-difference">21</td>
+                <td class="points">63</td>
+                <td class="last-10-games">
+                                    <ol><li title="Loss v Liverpool 4 - 0 on 28th January 2014" class="loss" data-result="4 - 0" data-against="Liverpool" data-date="28th January 2014"><span>Loss</span></li>
+<li title="Win v Aston Villa 2 - 1 on 1st February 2014" class="win" data-result="2 - 1" data-against="Aston Villa" data-date="1st February 2014"><span>Win</span></li>
+<li title="Loss v Tottenham 1 - 0 on 9th February 2014" class="loss" data-result="1 - 0" data-against="Tottenham" data-date="9th February 2014"><span>Loss</span></li>
+<li title="Loss v Chelsea 1 - 0 on 22nd February 2014" class="loss" data-result="1 - 0" data-against="Chelsea" data-date="22nd February 2014"><span>Loss</span></li>
+<li title="Win v West Ham 1 - 0 on 1st March 2014" class="win" data-result="1 - 0" data-against="West Ham" data-date="1st March 2014"><span>Win</span></li>
+<li title="Win v Cardiff 2 - 1 on 15th March 2014" class="win" data-result="2 - 1" data-against="Cardiff" data-date="15th March 2014"><span>Win</span></li>
+<li title="Win v Swansea 3 - 2 on 22nd March 2014" class="win" data-result="3 - 2" data-against="Swansea" data-date="22nd March 2014"><span>Win</span></li>
+<li title="Win v Newcastle 0 - 3 on 25th March 2014" class="win" data-result="0 - 3" data-against="Newcastle" data-date="25th March 2014"><span>Win</span></li>
+<li title="Win v Fulham 1 - 3 on 30th March 2014" class="win" data-result="1 - 3" data-against="Fulham" data-date="30th March 2014"><span>Win</span></li>
+<li title="Win v Arsenal 3 - 0 on 6th April 2014" class="win" data-result="3 - 0" data-against="Arsenal" data-date="6th April 2014"><span>Win</span></li></ol>                                </td>
+                <td class="status">
+                                            <a class="report" href="/sport/football/26807037">Report<span class="blq-hide"> of Everton&apos;s last match</span></a>                                    </td>
+        </tr>
+            <tr data-team-slug="tottenham-hotspur" id="team-tottenham-hotspur" class="team divider">
+                <td class="statistics"></td>
+                  <td class='position'><span class='no-movement'>No movement</span> <span class='position-number'>6</span></td>                  <td class="team-name"><a href='/sport/football/teams/tottenham-hotspur'>Tottenham</a></td>
+                <td class="played">33</td>
+
+                <td class="won"><span>18</span></td>
+                <td class="drawn">5</td>
+                <td class="lost">10</td>
+                <td class="for">45</td>
+                <td class="against">45</td>
+
+                <td class="goal-difference">0</td>
+                <td class="points">59</td>
+                <td class="last-10-games">
+                                    <ol><li title="Draw v Hull 1 - 1 on 1st February 2014" class="draw" data-result="1 - 1" data-against="Hull" data-date="1st February 2014"><span>Draw</span></li>
+<li title="Win v Everton 1 - 0 on 9th February 2014" class="win" data-result="1 - 0" data-against="Everton" data-date="9th February 2014"><span>Win</span></li>
+<li title="Win v Newcastle 0 - 4 on 12th February 2014" class="win" data-result="0 - 4" data-against="Newcastle" data-date="12th February 2014"><span>Win</span></li>
+<li title="Loss v Norwich 1 - 0 on 23rd February 2014" class="loss" data-result="1 - 0" data-against="Norwich" data-date="23rd February 2014"><span>Loss</span></li>
+<li title="Win v Cardiff 1 - 0 on 2nd March 2014" class="win" data-result="1 - 0" data-against="Cardiff" data-date="2nd March 2014"><span>Win</span></li>
+<li title="Loss v Chelsea 4 - 0 on 8th March 2014" class="loss" data-result="4 - 0" data-against="Chelsea" data-date="8th March 2014"><span>Loss</span></li>
+<li title="Loss v Arsenal 0 - 1 on 16th March 2014" class="loss" data-result="0 - 1" data-against="Arsenal" data-date="16th March 2014"><span>Loss</span></li>
+<li title="Win v Southampton 3 - 2 on 23rd March 2014" class="win" data-result="3 - 2" data-against="Southampton" data-date="23rd March 2014"><span>Win</span></li>
+<li title="Loss v Liverpool 4 - 0 on 30th March 2014" class="loss" data-result="4 - 0" data-against="Liverpool" data-date="30th March 2014"><span>Loss</span></li>
+<li title="Win v Sunderland 5 - 1 on 7th April 2014" class="win" data-result="5 - 1" data-against="Sunderland" data-date="7th April 2014"><span>Win</span></li></ol>                                </td>
+                <td class="status">
+                                            <a class="report" href="/sport/football/26814762">Report<span class="blq-hide"> of Tottenham&apos;s last match</span></a>                                    </td>
+        </tr>
+            <tr data-team-slug="manchester-united" id="team-manchester-united" class="team">
+                <td class="statistics"></td>
+                  <td class='position'><span class='no-movement'>No movement</span> <span class='position-number'>7</span></td>                  <td class="team-name"><a href='/sport/football/teams/manchester-united'>Man Utd</a></td>
+                <td class="played">33</td>
+
+                <td class="won"><span>17</span></td>
+                <td class="drawn">6</td>
+                <td class="lost">10</td>
+                <td class="for">56</td>
+                <td class="against">38</td>
+
+                <td class="goal-difference">18</td>
+                <td class="points">57</td>
+                <td class="last-10-games">
+                                    <ol><li title="Loss v Stoke 2 - 1 on 1st February 2014" class="loss" data-result="2 - 1" data-against="Stoke" data-date="1st February 2014"><span>Loss</span></li>
+<li title="Draw v Fulham 2 - 2 on 9th February 2014" class="draw" data-result="2 - 2" data-against="Fulham" data-date="9th February 2014"><span>Draw</span></li>
+<li title="Draw v Arsenal 0 - 0 on 12th February 2014" class="draw" data-result="0 - 0" data-against="Arsenal" data-date="12th February 2014"><span>Draw</span></li>
+<li title="Win v Crystal Palace 0 - 2 on 22nd February 2014" class="win" data-result="0 - 2" data-against="Crystal Palace" data-date="22nd February 2014"><span>Win</span></li>
+<li title="Win v West Brom 0 - 3 on 8th March 2014" class="win" data-result="0 - 3" data-against="West Brom" data-date="8th March 2014"><span>Win</span></li>
+<li title="Loss v Liverpool 0 - 3 on 16th March 2014" class="loss" data-result="0 - 3" data-against="Liverpool" data-date="16th March 2014"><span>Loss</span></li>
+<li title="Win v West Ham 0 - 2 on 22nd March 2014" class="win" data-result="0 - 2" data-against="West Ham" data-date="22nd March 2014"><span>Win</span></li>
+<li title="Loss v Man City 0 - 3 on 25th March 2014" class="loss" data-result="0 - 3" data-against="Man City" data-date="25th March 2014"><span>Loss</span></li>
+<li title="Win v Aston Villa 4 - 1 on 29th March 2014" class="win" data-result="4 - 1" data-against="Aston Villa" data-date="29th March 2014"><span>Win</span></li>
+<li title="Win v Newcastle 0 - 4 on 5th April 2014" class="win" data-result="0 - 4" data-against="Newcastle" data-date="5th April 2014"><span>Win</span></li></ol>                                </td>
+                <td class="status">
+                                            <a class="report" href="/sport/football/26797093">Report<span class="blq-hide"> of Man Utd&apos;s last match</span></a>                                    </td>
+        </tr>
+            <tr data-team-slug="southampton" id="team-southampton" class="team">
+                <td class="statistics"></td>
+                  <td class='position'><span class='no-movement'>No movement</span> <span class='position-number'>8</span></td>                  <td class="team-name"><a href='/sport/football/teams/southampton'>Southampton</a></td>
+                <td class="played">33</td>
+
+                <td class="won"><span>13</span></td>
+                <td class="drawn">9</td>
+                <td class="lost">11</td>
+                <td class="for">50</td>
+                <td class="against">44</td>
+
+                <td class="goal-difference">6</td>
+                <td class="points">48</td>
+                <td class="last-10-games">
+                                    <ol><li title="Win v Fulham 0 - 3 on 1st February 2014" class="win" data-result="0 - 3" data-against="Fulham" data-date="1st February 2014"><span>Win</span></li>
+<li title="Draw v Stoke 2 - 2 on 8th February 2014" class="draw" data-result="2 - 2" data-against="Stoke" data-date="8th February 2014"><span>Draw</span></li>
+<li title="Win v Hull 0 - 1 on 11th February 2014" class="win" data-result="0 - 1" data-against="Hull" data-date="11th February 2014"><span>Win</span></li>
+<li title="Loss v West Ham 3 - 1 on 22nd February 2014" class="loss" data-result="3 - 1" data-against="West Ham" data-date="22nd February 2014"><span>Loss</span></li>
+<li title="Loss v Liverpool 0 - 3 on 1st March 2014" class="loss" data-result="0 - 3" data-against="Liverpool" data-date="1st March 2014"><span>Loss</span></li>
+<li title="Win v Crystal Palace 0 - 1 on 8th March 2014" class="win" data-result="0 - 1" data-against="Crystal Palace" data-date="8th March 2014"><span>Win</span></li>
+<li title="Win v Norwich 4 - 2 on 15th March 2014" class="win" data-result="4 - 2" data-against="Norwich" data-date="15th March 2014"><span>Win</span></li>
+<li title="Loss v Tottenham 3 - 2 on 23rd March 2014" class="loss" data-result="3 - 2" data-against="Tottenham" data-date="23rd March 2014"><span>Loss</span></li>
+<li title="Win v Newcastle 4 - 0 on 29th March 2014" class="win" data-result="4 - 0" data-against="Newcastle" data-date="29th March 2014"><span>Win</span></li>
+<li title="Loss v Man City 4 - 1 on 5th April 2014" class="loss" data-result="4 - 1" data-against="Man City" data-date="5th April 2014"><span>Loss</span></li></ol>                                </td>
+                <td class="status">
+                                            <a class="report" href="/sport/football/26797094">Report<span class="blq-hide"> of Southampton&apos;s last match</span></a>                                    </td>
+        </tr>
+            <tr data-team-slug="newcastle-united" id="team-newcastle-united" class="team">
+                <td class="statistics"></td>
+                  <td class='position'><span class='no-movement'>No movement</span> <span class='position-number'>9</span></td>                  <td class="team-name"><a href='/sport/football/teams/newcastle-united'>Newcastle</a></td>
+                <td class="played">33</td>
+
+                <td class="won"><span>14</span></td>
+                <td class="drawn">4</td>
+                <td class="lost">15</td>
+                <td class="for">38</td>
+                <td class="against">51</td>
+
+                <td class="goal-difference">-13</td>
+                <td class="points">46</td>
+                <td class="last-10-games">
+                                    <ol><li title="Loss v Sunderland 0 - 3 on 1st February 2014" class="loss" data-result="0 - 3" data-against="Sunderland" data-date="1st February 2014"><span>Loss</span></li>
+<li title="Loss v Chelsea 3 - 0 on 8th February 2014" class="loss" data-result="3 - 0" data-against="Chelsea" data-date="8th February 2014"><span>Loss</span></li>
+<li title="Loss v Tottenham 0 - 4 on 12th February 2014" class="loss" data-result="0 - 4" data-against="Tottenham" data-date="12th February 2014"><span>Loss</span></li>
+<li title="Win v Aston Villa 1 - 0 on 23rd February 2014" class="win" data-result="1 - 0" data-against="Aston Villa" data-date="23rd February 2014"><span>Win</span></li>
+<li title="Win v Hull 1 - 4 on 1st March 2014" class="win" data-result="1 - 4" data-against="Hull" data-date="1st March 2014"><span>Win</span></li>
+<li title="Loss v Fulham 1 - 0 on 15th March 2014" class="loss" data-result="1 - 0" data-against="Fulham" data-date="15th March 2014"><span>Loss</span></li>
+<li title="Win v Crystal Palace 1 - 0 on 22nd March 2014" class="win" data-result="1 - 0" data-against="Crystal Palace" data-date="22nd March 2014"><span>Win</span></li>
+<li title="Loss v Everton 0 - 3 on 25th March 2014" class="loss" data-result="0 - 3" data-against="Everton" data-date="25th March 2014"><span>Loss</span></li>
+<li title="Loss v Southampton 4 - 0 on 29th March 2014" class="loss" data-result="4 - 0" data-against="Southampton" data-date="29th March 2014"><span>Loss</span></li>
+<li title="Loss v Man Utd 0 - 4 on 5th April 2014" class="loss" data-result="0 - 4" data-against="Man Utd" data-date="5th April 2014"><span>Loss</span></li></ol>                                </td>
+                <td class="status">
+                                            <a class="report" href="/sport/football/26797093">Report<span class="blq-hide"> of Newcastle&apos;s last match</span></a>                                    </td>
+        </tr>
+            <tr data-team-slug="stoke-city" id="team-stoke-city" class="team">
+                <td class="statistics"></td>
+                  <td class='position'><span class='no-movement'>No movement</span> <span class='position-number'>10</span></td>                  <td class="team-name"><a href='/sport/football/teams/stoke-city'>Stoke</a></td>
+                <td class="played">33</td>
+
+                <td class="won"><span>10</span></td>
+                <td class="drawn">10</td>
+                <td class="lost">13</td>
+                <td class="for">37</td>
+                <td class="against">48</td>
+
+                <td class="goal-difference">-11</td>
+                <td class="points">40</td>
+                <td class="last-10-games">
+                                    <ol><li title="Win v Man Utd 2 - 1 on 1st February 2014" class="win" data-result="2 - 1" data-against="Man Utd" data-date="1st February 2014"><span>Win</span></li>
+<li title="Draw v Southampton 2 - 2 on 8th February 2014" class="draw" data-result="2 - 2" data-against="Southampton" data-date="8th February 2014"><span>Draw</span></li>
+<li title="Draw v Swansea 1 - 1 on 12th February 2014" class="draw" data-result="1 - 1" data-against="Swansea" data-date="12th February 2014"><span>Draw</span></li>
+<li title="Loss v Man City 1 - 0 on 22nd February 2014" class="loss" data-result="1 - 0" data-against="Man City" data-date="22nd February 2014"><span>Loss</span></li>
+<li title="Win v Arsenal 1 - 0 on 1st March 2014" class="win" data-result="1 - 0" data-against="Arsenal" data-date="1st March 2014"><span>Win</span></li>
+<li title="Draw v Norwich 1 - 1 on 8th March 2014" class="draw" data-result="1 - 1" data-against="Norwich" data-date="8th March 2014"><span>Draw</span></li>
+<li title="Win v West Ham 3 - 1 on 15th March 2014" class="win" data-result="3 - 1" data-against="West Ham" data-date="15th March 2014"><span>Win</span></li>
+<li title="Win v Aston Villa 1 - 4 on 23rd March 2014" class="win" data-result="1 - 4" data-against="Aston Villa" data-date="23rd March 2014"><span>Win</span></li>
+<li title="Win v Hull 1 - 0 on 29th March 2014" class="win" data-result="1 - 0" data-against="Hull" data-date="29th March 2014"><span>Win</span></li>
+<li title="Loss v Chelsea 3 - 0 on 5th April 2014" class="loss" data-result="3 - 0" data-against="Chelsea" data-date="5th April 2014"><span>Loss</span></li></ol>                                </td>
+                <td class="status">
+                                            <a class="report" href="/sport/football/26796970">Report<span class="blq-hide"> of Stoke&apos;s last match</span></a>                                    </td>
+        </tr>
+            <tr data-team-slug="west-ham-united" id="team-west-ham-united" class="team">
+                <td class="statistics"></td>
+                  <td class='position'><span class='no-movement'>No movement</span> <span class='position-number'>11</span></td>                  <td class="team-name"><a href='/sport/football/teams/west-ham-united'>West Ham</a></td>
+                <td class="played">33</td>
+
+                <td class="won"><span>10</span></td>
+                <td class="drawn">7</td>
+                <td class="lost">16</td>
+                <td class="for">37</td>
+                <td class="against">44</td>
+
+                <td class="goal-difference">-7</td>
+                <td class="points">37</td>
+                <td class="last-10-games">
+                                    <ol><li title="Win v Swansea 2 - 0 on 1st February 2014" class="win" data-result="2 - 0" data-against="Swansea" data-date="1st February 2014"><span>Win</span></li>
+<li title="Win v Aston Villa 0 - 2 on 8th February 2014" class="win" data-result="0 - 2" data-against="Aston Villa" data-date="8th February 2014"><span>Win</span></li>
+<li title="Win v Norwich 2 - 0 on 11th February 2014" class="win" data-result="2 - 0" data-against="Norwich" data-date="11th February 2014"><span>Win</span></li>
+<li title="Win v Southampton 3 - 1 on 22nd February 2014" class="win" data-result="3 - 1" data-against="Southampton" data-date="22nd February 2014"><span>Win</span></li>
+<li title="Loss v Everton 1 - 0 on 1st March 2014" class="loss" data-result="1 - 0" data-against="Everton" data-date="1st March 2014"><span>Loss</span></li>
+<li title="Loss v Stoke 3 - 1 on 15th March 2014" class="loss" data-result="3 - 1" data-against="Stoke" data-date="15th March 2014"><span>Loss</span></li>
+<li title="Loss v Man Utd 0 - 2 on 22nd March 2014" class="loss" data-result="0 - 2" data-against="Man Utd" data-date="22nd March 2014"><span>Loss</span></li>
+<li title="Win v Hull 2 - 1 on 26th March 2014" class="win" data-result="2 - 1" data-against="Hull" data-date="26th March 2014"><span>Win</span></li>
+<li title="Win v Sunderland 1 - 2 on 31st March 2014" class="win" data-result="1 - 2" data-against="Sunderland" data-date="31st March 2014"><span>Win</span></li>
+<li title="Loss v Liverpool 1 - 2 on 6th April 2014" class="loss" data-result="1 - 2" data-against="Liverpool" data-date="6th April 2014"><span>Loss</span></li></ol>                                </td>
+                <td class="status">
+                                            <a class="report" href="/sport/football/26807039">Report<span class="blq-hide"> of West Ham&apos;s last match</span></a>                                    </td>
+        </tr>
+            <tr data-team-slug="hull-city" id="team-hull-city" class="team">
+                <td class="statistics"></td>
+                  <td class='position'><span class='no-movement'>No movement</span> <span class='position-number'>12</span></td>                  <td class="team-name"><a href='/sport/football/teams/hull-city'>Hull</a></td>
+                <td class="played">33</td>
+
+                <td class="won"><span>10</span></td>
+                <td class="drawn">6</td>
+                <td class="lost">17</td>
+                <td class="for">34</td>
+                <td class="against">40</td>
+
+                <td class="goal-difference">-6</td>
+                <td class="points">36</td>
+                <td class="last-10-games">
+                                    <ol><li title="Draw v Tottenham 1 - 1 on 1st February 2014" class="draw" data-result="1 - 1" data-against="Tottenham" data-date="1st February 2014"><span>Draw</span></li>
+<li title="Win v Sunderland 0 - 2 on 8th February 2014" class="win" data-result="0 - 2" data-against="Sunderland" data-date="8th February 2014"><span>Win</span></li>
+<li title="Loss v Southampton 0 - 1 on 11th February 2014" class="loss" data-result="0 - 1" data-against="Southampton" data-date="11th February 2014"><span>Loss</span></li>
+<li title="Win v Cardiff 0 - 4 on 22nd February 2014" class="win" data-result="0 - 4" data-against="Cardiff" data-date="22nd February 2014"><span>Win</span></li>
+<li title="Loss v Newcastle 1 - 4 on 1st March 2014" class="loss" data-result="1 - 4" data-against="Newcastle" data-date="1st March 2014"><span>Loss</span></li>
+<li title="Loss v Man City 0 - 2 on 15th March 2014" class="loss" data-result="0 - 2" data-against="Man City" data-date="15th March 2014"><span>Loss</span></li>
+<li title="Win v West Brom 2 - 0 on 22nd March 2014" class="win" data-result="2 - 0" data-against="West Brom" data-date="22nd March 2014"><span>Win</span></li>
+<li title="Loss v West Ham 2 - 1 on 26th March 2014" class="loss" data-result="2 - 1" data-against="West Ham" data-date="26th March 2014"><span>Loss</span></li>
+<li title="Loss v Stoke 1 - 0 on 29th March 2014" class="loss" data-result="1 - 0" data-against="Stoke" data-date="29th March 2014"><span>Loss</span></li>
+<li title="Win v Swansea 1 - 0 on 5th April 2014" class="win" data-result="1 - 0" data-against="Swansea" data-date="5th April 2014"><span>Win</span></li></ol>                                </td>
+                <td class="status">
+                                            <a class="report" href="/sport/football/26797139">Report<span class="blq-hide"> of Hull&apos;s last match</span></a>                                    </td>
+        </tr>
+            <tr data-team-slug="aston-villa" id="team-aston-villa" class="team">
+                <td class="statistics"></td>
+                  <td class='position'><span class='no-movement'>No movement</span> <span class='position-number'>13</span></td>                  <td class="team-name"><a href='/sport/football/teams/aston-villa'>Aston Villa</a></td>
+                <td class="played">32</td>
+
+                <td class="won"><span>9</span></td>
+                <td class="drawn">7</td>
+                <td class="lost">16</td>
+                <td class="for">35</td>
+                <td class="against">48</td>
+
+                <td class="goal-difference">-13</td>
+                <td class="points">34</td>
+                <td class="last-10-games">
+                                    <ol><li title="Win v West Brom 4 - 3 on 29th January 2014" class="win" data-result="4 - 3" data-against="West Brom" data-date="29th January 2014"><span>Win</span></li>
+<li title="Loss v Everton 2 - 1 on 1st February 2014" class="loss" data-result="2 - 1" data-against="Everton" data-date="1st February 2014"><span>Loss</span></li>
+<li title="Loss v West Ham 0 - 2 on 8th February 2014" class="loss" data-result="0 - 2" data-against="West Ham" data-date="8th February 2014"><span>Loss</span></li>
+<li title="Draw v Cardiff 0 - 0 on 11th February 2014" class="draw" data-result="0 - 0" data-against="Cardiff" data-date="11th February 2014"><span>Draw</span></li>
+<li title="Loss v Newcastle 1 - 0 on 23rd February 2014" class="loss" data-result="1 - 0" data-against="Newcastle" data-date="23rd February 2014"><span>Loss</span></li>
+<li title="Win v Norwich 4 - 1 on 2nd March 2014" class="win" data-result="4 - 1" data-against="Norwich" data-date="2nd March 2014"><span>Win</span></li>
+<li title="Win v Chelsea 1 - 0 on 15th March 2014" class="win" data-result="1 - 0" data-against="Chelsea" data-date="15th March 2014"><span>Win</span></li>
+<li title="Loss v Stoke 1 - 4 on 23rd March 2014" class="loss" data-result="1 - 4" data-against="Stoke" data-date="23rd March 2014"><span>Loss</span></li>
+<li title="Loss v Man Utd 4 - 1 on 29th March 2014" class="loss" data-result="4 - 1" data-against="Man Utd" data-date="29th March 2014"><span>Loss</span></li>
+<li title="Loss v Fulham 1 - 2 on 5th April 2014" class="loss" data-result="1 - 2" data-against="Fulham" data-date="5th April 2014"><span>Loss</span></li></ol>                                </td>
+                <td class="status">
+                                            <a class="report" href="/sport/football/26797091">Report<span class="blq-hide"> of Aston Villa&apos;s last match</span></a>                                    </td>
+        </tr>
+            <tr data-team-slug="crystal-palace" id="team-crystal-palace" class="team">
+                <td class="statistics"></td>
+                  <td class='position'><span class='no-movement'>No movement</span> <span class='position-number'>14</span></td>                  <td class="team-name"><a href='/sport/football/teams/crystal-palace'>Crystal Palace</a></td>
+                <td class="played">32</td>
+
+                <td class="won"><span>10</span></td>
+                <td class="drawn">4</td>
+                <td class="lost">18</td>
+                <td class="for">23</td>
+                <td class="against">39</td>
+
+                <td class="goal-difference">-16</td>
+                <td class="points">34</td>
+                <td class="last-10-games">
+                                    <ol><li title="Win v Hull 1 - 0 on 28th January 2014" class="win" data-result="1 - 0" data-against="Hull" data-date="28th January 2014"><span>Win</span></li>
+<li title="Loss v Arsenal 2 - 0 on 2nd February 2014" class="loss" data-result="2 - 0" data-against="Arsenal" data-date="2nd February 2014"><span>Loss</span></li>
+<li title="Win v West Brom 3 - 1 on 8th February 2014" class="win" data-result="3 - 1" data-against="West Brom" data-date="8th February 2014"><span>Win</span></li>
+<li title="Loss v Man Utd 0 - 2 on 22nd February 2014" class="loss" data-result="0 - 2" data-against="Man Utd" data-date="22nd February 2014"><span>Loss</span></li>
+<li title="Draw v Swansea 1 - 1 on 2nd March 2014" class="draw" data-result="1 - 1" data-against="Swansea" data-date="2nd March 2014"><span>Draw</span></li>
+<li title="Loss v Southampton 0 - 1 on 8th March 2014" class="loss" data-result="0 - 1" data-against="Southampton" data-date="8th March 2014"><span>Loss</span></li>
+<li title="Draw v Sunderland 0 - 0 on 15th March 2014" class="draw" data-result="0 - 0" data-against="Sunderland" data-date="15th March 2014"><span>Draw</span></li>
+<li title="Loss v Newcastle 1 - 0 on 22nd March 2014" class="loss" data-result="1 - 0" data-against="Newcastle" data-date="22nd March 2014"><span>Loss</span></li>
+<li title="Win v Chelsea 1 - 0 on 29th March 2014" class="win" data-result="1 - 0" data-against="Chelsea" data-date="29th March 2014"><span>Win</span></li>
+<li title="Win v Cardiff 0 - 3 on 5th April 2014" class="win" data-result="0 - 3" data-against="Cardiff" data-date="5th April 2014"><span>Win</span></li></ol>                                </td>
+                <td class="status">
+                                            <a class="report" href="/sport/football/26797092">Report<span class="blq-hide"> of Crystal Palace&apos;s last match</span></a>                                    </td>
+        </tr>
+            <tr data-team-slug="swansea-city" id="team-swansea-city" class="team">
+                <td class="statistics"></td>
+                  <td class='position'><span class='no-movement'>No movement</span> <span class='position-number'>15</span></td>                  <td class="team-name"><a href='/sport/football/teams/swansea-city'>Swansea</a></td>
+                <td class="played">33</td>
+
+                <td class="won"><span>8</span></td>
+                <td class="drawn">9</td>
+                <td class="lost">16</td>
+                <td class="for">45</td>
+                <td class="against">49</td>
+
+                <td class="goal-difference">-4</td>
+                <td class="points">33</td>
+                <td class="last-10-games">
+                                    <ol><li title="Loss v West Ham 2 - 0 on 1st February 2014" class="loss" data-result="2 - 0" data-against="West Ham" data-date="1st February 2014"><span>Loss</span></li>
+<li title="Win v Cardiff 3 - 0 on 8th February 2014" class="win" data-result="3 - 0" data-against="Cardiff" data-date="8th February 2014"><span>Win</span></li>
+<li title="Draw v Stoke 1 - 1 on 12th February 2014" class="draw" data-result="1 - 1" data-against="Stoke" data-date="12th February 2014"><span>Draw</span></li>
+<li title="Loss v Liverpool 4 - 3 on 23rd February 2014" class="loss" data-result="4 - 3" data-against="Liverpool" data-date="23rd February 2014"><span>Loss</span></li>
+<li title="Draw v Crystal Palace 1 - 1 on 2nd March 2014" class="draw" data-result="1 - 1" data-against="Crystal Palace" data-date="2nd March 2014"><span>Draw</span></li>
+<li title="Loss v West Brom 1 - 2 on 15th March 2014" class="loss" data-result="1 - 2" data-against="West Brom" data-date="15th March 2014"><span>Loss</span></li>
+<li title="Loss v Everton 3 - 2 on 22nd March 2014" class="loss" data-result="3 - 2" data-against="Everton" data-date="22nd March 2014"><span>Loss</span></li>
+<li title="Draw v Arsenal 2 - 2 on 25th March 2014" class="draw" data-result="2 - 2" data-against="Arsenal" data-date="25th March 2014"><span>Draw</span></li>
+<li title="Win v Norwich 3 - 0 on 29th March 2014" class="win" data-result="3 - 0" data-against="Norwich" data-date="29th March 2014"><span>Win</span></li>
+<li title="Loss v Hull 1 - 0 on 5th April 2014" class="loss" data-result="1 - 0" data-against="Hull" data-date="5th April 2014"><span>Loss</span></li></ol>                                </td>
+                <td class="status">
+                                            <a class="report" href="/sport/football/26797139">Report<span class="blq-hide"> of Swansea&apos;s last match</span></a>                                    </td>
+        </tr>
+            <tr data-team-slug="west-bromwich-albion" id="team-west-bromwich-albion" class="team">
+                <td class="statistics"></td>
+                  <td class='position'><span class='no-movement'>No movement</span> <span class='position-number'>16</span></td>                  <td class="team-name"><a href='/sport/football/teams/west-bromwich-albion'>West Brom</a></td>
+                <td class="played">32</td>
+
+                <td class="won"><span>6</span></td>
+                <td class="drawn">14</td>
+                <td class="lost">12</td>
+                <td class="for">37</td>
+                <td class="against">48</td>
+
+                <td class="goal-difference">-11</td>
+                <td class="points">32</td>
+                <td class="last-10-games">
+                                    <ol><li title="Loss v Aston Villa 4 - 3 on 29th January 2014" class="loss" data-result="4 - 3" data-against="Aston Villa" data-date="29th January 2014"><span>Loss</span></li>
+<li title="Draw v Liverpool 1 - 1 on 2nd February 2014" class="draw" data-result="1 - 1" data-against="Liverpool" data-date="2nd February 2014"><span>Draw</span></li>
+<li title="Loss v Crystal Palace 3 - 1 on 8th February 2014" class="loss" data-result="3 - 1" data-against="Crystal Palace" data-date="8th February 2014"><span>Loss</span></li>
+<li title="Draw v Chelsea 1 - 1 on 11th February 2014" class="draw" data-result="1 - 1" data-against="Chelsea" data-date="11th February 2014"><span>Draw</span></li>
+<li title="Draw v Fulham 1 - 1 on 22nd February 2014" class="draw" data-result="1 - 1" data-against="Fulham" data-date="22nd February 2014"><span>Draw</span></li>
+<li title="Loss v Man Utd 0 - 3 on 8th March 2014" class="loss" data-result="0 - 3" data-against="Man Utd" data-date="8th March 2014"><span>Loss</span></li>
+<li title="Win v Swansea 1 - 2 on 15th March 2014" class="win" data-result="1 - 2" data-against="Swansea" data-date="15th March 2014"><span>Win</span></li>
+<li title="Loss v Hull 2 - 0 on 22nd March 2014" class="loss" data-result="2 - 0" data-against="Hull" data-date="22nd March 2014"><span>Loss</span></li>
+<li title="Draw v Cardiff 3 - 3 on 29th March 2014" class="draw" data-result="3 - 3" data-against="Cardiff" data-date="29th March 2014"><span>Draw</span></li>
+<li title="Win v Norwich 0 - 1 on 5th April 2014" class="win" data-result="0 - 1" data-against="Norwich" data-date="5th April 2014"><span>Win</span></li></ol>                                </td>
+                <td class="status">
+                                            <a class="report" href="/sport/football/26796969">Report<span class="blq-hide"> of West Brom&apos;s last match</span></a>                                    </td>
+        </tr>
+            <tr data-team-slug="norwich-city" id="team-norwich-city" class="team">
+                <td class="statistics"></td>
+                  <td class='position'><span class='no-movement'>No movement</span> <span class='position-number'>17</span></td>                  <td class="team-name"><a href='/sport/football/teams/norwich-city'>Norwich</a></td>
+                <td class="played">33</td>
+
+                <td class="won"><span>8</span></td>
+                <td class="drawn">8</td>
+                <td class="lost">17</td>
+                <td class="for">26</td>
+                <td class="against">52</td>
+
+                <td class="goal-difference">-26</td>
+                <td class="points">32</td>
+                <td class="last-10-games">
+                                    <ol><li title="Loss v Cardiff 2 - 1 on 1st February 2014" class="loss" data-result="2 - 1" data-against="Cardiff" data-date="1st February 2014"><span>Loss</span></li>
+<li title="Draw v Man City 0 - 0 on 8th February 2014" class="draw" data-result="0 - 0" data-against="Man City" data-date="8th February 2014"><span>Draw</span></li>
+<li title="Loss v West Ham 2 - 0 on 11th February 2014" class="loss" data-result="2 - 0" data-against="West Ham" data-date="11th February 2014"><span>Loss</span></li>
+<li title="Win v Tottenham 1 - 0 on 23rd February 2014" class="win" data-result="1 - 0" data-against="Tottenham" data-date="23rd February 2014"><span>Win</span></li>
+<li title="Loss v Aston Villa 4 - 1 on 2nd March 2014" class="loss" data-result="4 - 1" data-against="Aston Villa" data-date="2nd March 2014"><span>Loss</span></li>
+<li title="Draw v Stoke 1 - 1 on 8th March 2014" class="draw" data-result="1 - 1" data-against="Stoke" data-date="8th March 2014"><span>Draw</span></li>
+<li title="Loss v Southampton 4 - 2 on 15th March 2014" class="loss" data-result="4 - 2" data-against="Southampton" data-date="15th March 2014"><span>Loss</span></li>
+<li title="Win v Sunderland 2 - 0 on 22nd March 2014" class="win" data-result="2 - 0" data-against="Sunderland" data-date="22nd March 2014"><span>Win</span></li>
+<li title="Loss v Swansea 3 - 0 on 29th March 2014" class="loss" data-result="3 - 0" data-against="Swansea" data-date="29th March 2014"><span>Loss</span></li>
+<li title="Loss v West Brom 0 - 1 on 5th April 2014" class="loss" data-result="0 - 1" data-against="West Brom" data-date="5th April 2014"><span>Loss</span></li></ol>                                </td>
+                <td class="status">
+                                            <a class="report" href="/sport/football/26796969">Report<span class="blq-hide"> of Norwich&apos;s last match</span></a>                                    </td>
+        </tr>
+            <tr data-team-slug="fulham" id="team-fulham" class="team divider">
+                <td class="statistics"></td>
+                  <td class='position'><span class='no-movement'>No movement</span> <span class='position-number'>18</span></td>                  <td class="team-name"><a href='/sport/football/teams/fulham'>Fulham</a></td>
+                <td class="played">33</td>
+
+                <td class="won"><span>8</span></td>
+                <td class="drawn">3</td>
+                <td class="lost">22</td>
+                <td class="for">33</td>
+                <td class="against">74</td>
+
+                <td class="goal-difference">-41</td>
+                <td class="points">27</td>
+                <td class="last-10-games">
+                                    <ol><li title="Loss v Southampton 0 - 3 on 1st February 2014" class="loss" data-result="0 - 3" data-against="Southampton" data-date="1st February 2014"><span>Loss</span></li>
+<li title="Draw v Man Utd 2 - 2 on 9th February 2014" class="draw" data-result="2 - 2" data-against="Man Utd" data-date="9th February 2014"><span>Draw</span></li>
+<li title="Loss v Liverpool 2 - 3 on 12th February 2014" class="loss" data-result="2 - 3" data-against="Liverpool" data-date="12th February 2014"><span>Loss</span></li>
+<li title="Draw v West Brom 1 - 1 on 22nd February 2014" class="draw" data-result="1 - 1" data-against="West Brom" data-date="22nd February 2014"><span>Draw</span></li>
+<li title="Loss v Chelsea 1 - 3 on 1st March 2014" class="loss" data-result="1 - 3" data-against="Chelsea" data-date="1st March 2014"><span>Loss</span></li>
+<li title="Loss v Cardiff 3 - 1 on 8th March 2014" class="loss" data-result="3 - 1" data-against="Cardiff" data-date="8th March 2014"><span>Loss</span></li>
+<li title="Win v Newcastle 1 - 0 on 15th March 2014" class="win" data-result="1 - 0" data-against="Newcastle" data-date="15th March 2014"><span>Win</span></li>
+<li title="Loss v Man City 5 - 0 on 22nd March 2014" class="loss" data-result="5 - 0" data-against="Man City" data-date="22nd March 2014"><span>Loss</span></li>
+<li title="Loss v Everton 1 - 3 on 30th March 2014" class="loss" data-result="1 - 3" data-against="Everton" data-date="30th March 2014"><span>Loss</span></li>
+<li title="Win v Aston Villa 1 - 2 on 5th April 2014" class="win" data-result="1 - 2" data-against="Aston Villa" data-date="5th April 2014"><span>Win</span></li></ol>                                </td>
+                <td class="status">
+                                            <a class="report" href="/sport/football/26797091">Report<span class="blq-hide"> of Fulham&apos;s last match</span></a>                                    </td>
+        </tr>
+            <tr data-team-slug="cardiff-city" id="team-cardiff-city" class="team">
+                <td class="statistics"></td>
+                  <td class='position'><span class='no-movement'>No movement</span> <span class='position-number'>19</span></td>                  <td class="team-name"><a href='/sport/football/teams/cardiff-city'>Cardiff</a></td>
+                <td class="played">33</td>
+
+                <td class="won"><span>6</span></td>
+                <td class="drawn">8</td>
+                <td class="lost">19</td>
+                <td class="for">29</td>
+                <td class="against">64</td>
+
+                <td class="goal-difference">-35</td>
+                <td class="points">26</td>
+                <td class="last-10-games">
+                                    <ol><li title="Win v Norwich 2 - 1 on 1st February 2014" class="win" data-result="2 - 1" data-against="Norwich" data-date="1st February 2014"><span>Win</span></li>
+<li title="Loss v Swansea 3 - 0 on 8th February 2014" class="loss" data-result="3 - 0" data-against="Swansea" data-date="8th February 2014"><span>Loss</span></li>
+<li title="Draw v Aston Villa 0 - 0 on 11th February 2014" class="draw" data-result="0 - 0" data-against="Aston Villa" data-date="11th February 2014"><span>Draw</span></li>
+<li title="Loss v Hull 0 - 4 on 22nd February 2014" class="loss" data-result="0 - 4" data-against="Hull" data-date="22nd February 2014"><span>Loss</span></li>
+<li title="Loss v Tottenham 1 - 0 on 2nd March 2014" class="loss" data-result="1 - 0" data-against="Tottenham" data-date="2nd March 2014"><span>Loss</span></li>
+<li title="Win v Fulham 3 - 1 on 8th March 2014" class="win" data-result="3 - 1" data-against="Fulham" data-date="8th March 2014"><span>Win</span></li>
+<li title="Loss v Everton 2 - 1 on 15th March 2014" class="loss" data-result="2 - 1" data-against="Everton" data-date="15th March 2014"><span>Loss</span></li>
+<li title="Loss v Liverpool 3 - 6 on 22nd March 2014" class="loss" data-result="3 - 6" data-against="Liverpool" data-date="22nd March 2014"><span>Loss</span></li>
+<li title="Draw v West Brom 3 - 3 on 29th March 2014" class="draw" data-result="3 - 3" data-against="West Brom" data-date="29th March 2014"><span>Draw</span></li>
+<li title="Loss v Crystal Palace 0 - 3 on 5th April 2014" class="loss" data-result="0 - 3" data-against="Crystal Palace" data-date="5th April 2014"><span>Loss</span></li></ol>                                </td>
+                <td class="status">
+                                            <a class="report" href="/sport/football/26797092">Report<span class="blq-hide"> of Cardiff&apos;s last match</span></a>                                    </td>
+        </tr>
+            <tr data-team-slug="sunderland" id="team-sunderland" class="team">
+                <td class="statistics"></td>
+                  <td class='position'><span class='no-movement'>No movement</span> <span class='position-number'>20</span></td>                  <td class="team-name"><a href='/sport/football/teams/sunderland'>Sunderland</a></td>
+                <td class="played">31</td>
+
+                <td class="won"><span>6</span></td>
+                <td class="drawn">7</td>
+                <td class="lost">18</td>
+                <td class="for">29</td>
+                <td class="against">53</td>
+
+                <td class="goal-difference">-24</td>
+                <td class="points">25</td>
+                <td class="last-10-games">
+                                    <ol><li title="Draw v Southampton 2 - 2 on 18th January 2014" class="draw" data-result="2 - 2" data-against="Southampton" data-date="18th January 2014"><span>Draw</span></li>
+<li title="Win v Stoke 1 - 0 on 29th January 2014" class="win" data-result="1 - 0" data-against="Stoke" data-date="29th January 2014"><span>Win</span></li>
+<li title="Win v Newcastle 0 - 3 on 1st February 2014" class="win" data-result="0 - 3" data-against="Newcastle" data-date="1st February 2014"><span>Win</span></li>
+<li title="Loss v Hull 0 - 2 on 8th February 2014" class="loss" data-result="0 - 2" data-against="Hull" data-date="8th February 2014"><span>Loss</span></li>
+<li title="Loss v Arsenal 4 - 1 on 22nd February 2014" class="loss" data-result="4 - 1" data-against="Arsenal" data-date="22nd February 2014"><span>Loss</span></li>
+<li title="Draw v Crystal Palace 0 - 0 on 15th March 2014" class="draw" data-result="0 - 0" data-against="Crystal Palace" data-date="15th March 2014"><span>Draw</span></li>
+<li title="Loss v Norwich 2 - 0 on 22nd March 2014" class="loss" data-result="2 - 0" data-against="Norwich" data-date="22nd March 2014"><span>Loss</span></li>
+<li title="Loss v Liverpool 2 - 1 on 26th March 2014" class="loss" data-result="2 - 1" data-against="Liverpool" data-date="26th March 2014"><span>Loss</span></li>
+<li title="Loss v West Ham 1 - 2 on 31st March 2014" class="loss" data-result="1 - 2" data-against="West Ham" data-date="31st March 2014"><span>Loss</span></li>
+<li title="Loss v Tottenham 5 - 1 on 7th April 2014" class="loss" data-result="5 - 1" data-against="Tottenham" data-date="7th April 2014"><span>Loss</span></li></ol>                                </td>
+                <td class="status">
+                                            <a class="report" href="/sport/football/26814762">Report<span class="blq-hide"> of Sunderland&apos;s last match</span></a>                                    </td>
+        </tr>
+        </tbody>
+</table>
+ </div>  </div> <p class="disclaimer">Please note: All times UK. Tables are subject to change. The BBC is not responsible for any changes that may be made.</p>
+            <div id="bbccom_mpu" class="bbccom_display_none">
+            <script type="text/javascript">BBC.adverts.write("mpu",true);</script>
+        </div>
+        <script type="text/javascript">BBC.adverts.show("mpu");</script>
+                <div id="bbccom_adsense_mpu" class="bbccom_adsense bbccom_display_none">
+            <script type="text/javascript">
+                if (BBC.adverts.isActive('ads')) {
+                    bbc_adsense_slot = "adsense_mpu"; bbc_adsense_country = "rest";
+                    document.write('<script type="text/javascript" src="http://static.bbci.co.uk/bbcdotcom/0.3.237/script/adsense_write.js">\x3C/script>');
+                }
+            </script>
+        </div>
+        <script type="text/javascript">BBC.adverts.show("adsense_mpu");</script>
+     </div>    <div id="footer-services" class="blq-clearfix"> <div id="services" data-istats-container="footer_services"> <h2>Services</h2> <ul> <li><a href="http://news.bbc.co.uk/sport1/hi/15561688.stm" class="services-mobile">Mobile</a></li> <li><a href="/sport/0/15561694" class="services-interactive-tv">Interactive TV</a></li> <li><a href="http://news.bbc.co.uk/sport1/hi/15890345.stm" class="services-news-feed">News Feeds</a></li> <li><a href="http://www.bbc.co.uk/podcasts" class="services-podcasts">Podcasts</a></li> </ul> </div> <div id="about" data-istats-container="footer_about-bbc-sport"> <h2>About BBC Sport</h2> <ul> <li><a href="http://news.bbc.co.uk/sport1/hi/front_page/15560234.stm">News Sources</a></li> <li><a href="http://news.bbc.co.uk/sport1/hi/front_page/15561348.stm">Help &amp; FAQs</a></li> </ul> </div> </div>      <script type="text/javascript" src="http://static.bbci.co.uk/onesport/2.6.342/js/onesport-for-desktop/body-last.js"></script>       </div>   <!--[if IE 6]> <div id="blq-ie6-upgrade"> <p> <span>You're using the Internet Explorer 6 browser to view the BBC website. Our site will work much better if you change to a more modern browser. It's free, quick and easy.</span> <a href="http://www.browserchoice.eu/">Find out more <span>about upgrading your browser</span> here&hellip;</a> </p> </div> <![endif]-->  <div id="blq-foot" lang="en" class="blq-rst blq-clearfix blq-foot-transparent blq-foot-text-dark"> <div id="blq-footlinks"> <h2 class="blq-hide">BBC links</h2>       <ul>                    <li class="blq-footlinks-row"> <ul class="blq-footlinks-row-list"> <li><a href="http://m.bbc.com/sport/football/tables" id="blq-footer-mobile">Mobile site</a></li><li><a href="/terms/">Terms of Use</a></li><li><a href="/aboutthebbc/">About the BBC</a></li> </ul> </li>                     <li class="blq-footlinks-row"> <ul class="blq-footlinks-row-list"> <li><a href="http://advertising.bbcworldwide.com">Advertise With Us</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/accessibility/">Accessibility Help</a></li> </ul> </li>                     <li class="blq-footlinks-row"> <ul class="blq-footlinks-row-list"> <li><a href="/bbc.com/ad-choices/">Ad Choices</a></li><li><a href="/privacy/bbc-cookies-policy.shtml">Cookies</a></li><li><a href="/contact/">Contact the BBC</a></li> </ul> </li>           <li class="blq-footlinks-row"> <ul class="blq-footlinks-row-list"> <li><a href="/guidance/">Parental Guidance</a></li> </ul> </li>             </ul> <script type="text/javascript">/*<![CDATA[*/ (function() { var mLink = document.getElementById('blq-footer-mobile'), stick = function() { var d = new Date (); d.setYear(d.getFullYear() + 1); d = d.toUTCString(); window.bbccookies.set('ckps_d=m;domain=.bbc.co.uk;path=/;expires=' + d ); window.bbccookies.set('ckps_d=m;domain=.bbc.com;path=/;expires=' + d ); }; if (mLink) {  if (mLink.addEventListener) { mLink.addEventListener('click', stick, false); } else if (mLink.attachEvent) { mLink.attachEvent('onclick', stick); } } })(); /*]]>*/</script>  </div>  <div id="blq-foot-blocks" class="blq-footer-image-dark"><img src="http://static.bbci.co.uk/frameworks/barlesque/2.60.7/desktop/3.5/img/blocks/dark.png" width="84" height="24" alt="BBC" /></div>             <div id="bbccom_bottom" class="bbccom_display_none" style="width:468px; text-align:right;">
+            <script type="text/javascript">BBC.adverts.write("bottom",true);</script>
+        </div>
+        <script type="text/javascript">BBC.adverts.show("bottom");</script>
+     <p id="blq-disclaim"><span id="blq-copy">BBC &copy; 2014</span> <a href="/help/web/links/">The BBC is not responsible for the content of external sites. Read more.</a></p> <div id="blq-obit"><p><strong>This page is best viewed in an up-to-date web browser with style sheets (CSS) enabled. While you will be able to view the content of this page in your current browser, you will not be able to get the full visual experience. Please consider upgrading your browser software or enabling style sheets (CSS) if you are able to do so.</strong></p></div> </div> </div> 
+<!-- BBCDOTCOM analytics template:client-side journalismVariant: false ipIsAdvertiseCombined: true adsEnabled: true  showDotcom: true flagpole: ON -->
+    
+            <script type="text/javascript">
+            /*<![CDATA[*/
+            if (BBC.adverts.isActive('analytics')) {
+                if(typeof(bbcdotcom) != 'undefined' && typeof(bbcdotcom.stats) != 'undefined') {
+                    bbcdotcom.stats.contentType = "HTML";
+                                    }
+            }
+            /*]]>*/
+        </script>
+
+
+            <!-- Start AudienceScience -->
+        <script type="text/javascript">
+            /*<![CDATA[*/
+            if (BBC.adverts.isActive('analytics')) {
+                document.write('<script type="text/javascript" src="http://js.revsci.net/gateway/gw.js?csid=J08781">\x3C/script>');
+            }
+            /*]]>*/
+        </script>
+        <script type="text/javascript">
+            /*<![CDATA[*/
+            if (BBC.adverts.isActive('analytics')) {
+                DM_tag();
+            }
+            /*]]>*/
+        </script>
+        <!-- End AudienceScience -->
+
+            <!-- Start SiteCatalyst -->
+        <script type="text/javascript">
+            /*<![CDATA[*/
+            if (BBC.adverts.isActive('analytics')) {
+                var s_account = "bbcwglobalprod";
+                                    document.write('<script type="text/javascript" src="http://static.bbci.co.uk/bbcdotcom/0.3.237/script/s_code.js">\x3C/script>');
+                            }
+            /*]]>*/
+        </script>                                   <script type="text/javascript">                 /*<![CDATA[*/
+            if (BBC.adverts.isActive('analytics')) {
+                var s_code=scw.t();if(s_code)document.write(s_code)
+            }
+            /*]]>*/
+        </script>
+        <!-- End SiteCatalyst -->
+
+
+            <!-- Start comScore Tag -->
+        <script type="text/javascript">
+            /*<![CDATA[*/
+            if (BBC.adverts.isActive('analytics')) {
+                document.write("\x3Cscript src='" + (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js'>\x3C/script>");
+            }
+            /*]]>*/
+        </script>
+        <script type="text/javascript">
+            /*<![CDATA[*/
+            if (BBC.adverts.isActive('analytics')) {
+                COMSCORE.beacon({
+                    c1:2,
+                    c2:"6035051",
+                    c3:"",
+                    c4:"www.bbc.com/sport/football/tables",
+                    c5:"",
+                    c6:"",
+                    c15:""
+                });
+            }
+            /*]]>*/
+        </script>
+        <!-- End comScore Tag -->
+
+            <!-- Begin Sitestat4 code -->
+        <script type="text/javascript">
+            /*<![CDATA[*/
+            if (BBC.adverts.isActive('sitestat')) {
+                function sitestat(ns_l){ns_l+='&amp;ns__t='+(new Date()).getTime();
+                ns_0=document.referrer;
+                ns_0=(ns_0.lastIndexOf('/')==ns_0.length-1)?ns_0.substring(ns_0.lastIndexOf('/'),0):ns_0;
+                if(ns_0.length>0)ns_l+='&amp;ns_referrer='+encodeURI(ns_0);
+                if(document.images){ns_1=new Image();ns_1.src=ns_l;}else
+                document.write('<img src="'+ns_l+'" width="1" height="1" alt="">');}
+                sitestat("http://nl.sitestat.com/adfab/bbc/s?teller");
+            }
+            /*]]>*/
+        </script>
+        <!-- End Sitestat4 code -->
+
+
+            <!-- Start Nielsen Online SiteCensus V6.0 -->
+        <script type="text/javascript">
+            /*<![CDATA[*/
+            if (BBC.adverts.isActive('nielsen-au')) {
+                <!-- COPYRIGHT 2009 Nielsen Online -->
+                document.write('<script type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https:' : 'http:') + '//secure-au.imrworldwide.com/v60.js">\x3C/script>');
+            }
+            /*]]>*/
+        </script>                                   <script type="text/javascript">                 /*<![CDATA[*/
+            if (BBC.adverts.isActive('nielsen-au')) {
+                nol_t({cid:"au-bbc",content:"0",server:"secure-au"}).record().post();
+            }
+            /*]]>*/
+        </script>
+        <!-- End Nielsen Online SiteCensus V6.0 -->
+
+
+            <!-- Start Nielsen Online SiteCensus V6.0 -->
+        <script type="text/javascript">
+            /*<![CDATA[*/
+            if (BBC.adverts.isActive('nielsen-nz')) {
+                <!-- COPYRIGHT 2009 Nielsen Online -->
+                document.write('<script type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https:' : 'http:') + '//secure-nz.imrworldwide.com/v60.js">\x3C/script>');
+            }
+            /*]]>*/
+        </script>                                   <script type="text/javascript">                 /*<![CDATA[*/
+            if (BBC.adverts.isActive('nielsen-nz')) {
+                nol_t({cid:"nz-bbc",content:"0",server:"secure-nz"}).record().post();
+            }
+            /*]]>*/
+        </script>
+        <!-- End Nielsen Online SiteCensus V6.0 -->
+
+
+            <!-- Start Nielsen Online SiteCensus V6.0 -->
+        <script type="text/javascript">
+            /*<![CDATA[*/
+            if (BBC.adverts.isActive('nielsen-us')) {
+                <!-- COPYRIGHT 2010 Nielsen Online -->
+               (function () {
+                   var d = new Image(1, 1);
+                   d.onerror = d.onload = function () {
+                       d.onerror = d.onload = null;
+                   };
+                   d.src = [('https:' == document.location.protocol ? 'https:' : 'http:') + "//secure-us.imrworldwide.com/cgi-bin/m?ci=us-804789h&amp;cg=0&amp;cc=1&amp;si=", encodeURI(window.location.href), "&amp;rp=",
+                   encodeURI(document.referrer), "&amp;ts=compact&amp;rnd=", (new Date()).getTime()].join('');
+                })();
+            }
+            /*]]>*/
+        </script>
+        <!-- End Nielsen Online SiteCensus V6.0 -->
+
+
+            <!-- Effective Measure BBCCOM-1195 -->
+        <script type="text/javascript">
+            /*<![CDATA[*/
+            if (BBC.adverts.isActive('analytics')) {
+                (function() {
+                    var em = document.createElement('script'); em.type = 'text/javascript'; em.async = true;
+                    em.src = ('https:' == document.location.protocol ? 'https://me-ssl' : 'http://me-cdn') + '.effectivemeasure.net/em.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(em, s);
+                })();
+            }
+            /*]]>*/
+        </script>
+        <!-- End Effective Measure -->
+
+
+            <!-- AGOF BBCCOM-1271 -->
+        <script type="text/javascript">
+            /*<![CDATA[*/
+            if (BBC.adverts.isActive('agof')) {
+                var ivwcode="default";
+                if(typeof BBC != 'undefined' && typeof BBC.adverts != 'undefined'){
+                    ivwcode = BBC.adverts.getSectionPath();
+                }
+                var IVW="http://bbc.ivwbox.de/cgi-bin/ivw/CP/"+ivwcode+";";
+                document.write("<img src=\""+IVW+"?r="+encodeURI(document.referrer)+"&d="+(Math.random()*100000)+"\" width=\"1\" height=\"1\" alt=\"szmtag\" />");
+            }
+            /*]]>*/
+        </script>
+        <script type="text/javascript">
+            /*<![CDATA[*/
+            if (BBC.adverts.isActive('agof')) {
+                var szmvars="bbc//CP/"+ivwcode;
+                document.write('<script src="http://bbc.ivwbox.de/2004/01/survey.js" type="text/javascript">\x3C/script>');
+            }
+            /*]]>*/
+        </script>
+        <!-- End AGOF -->
+
+            <!-- (C)2000-2014 Gemius SA - gemiusAudience / Bbc.com -->
+        <script type="text/javascript">
+            /*<![CDATA[*/
+            if (BBC.adverts.isActive('analytics')) {
+                var pp_gemius_identifier;
+                if (document.location.href.match(/(?:\.com|\.co\.uk)$/)) {
+                    pp_gemius_identifier = new String('olWVhnuxiY1QRfycRpHDeOVyHZFpFq8ZzHNLzSAeCrH.M7');
+                } else {
+                    pp_gemius_identifier = new String('.FE7YrQv1LlVkCW3mZWXere_P1I8b4bS5yJegCpKj23.E7');
+                }
+                document.write('<script src="http://static.bbci.co.uk/bbcdotcom/0.3.237/script/vendor/gemius/xgemius.js" type="text/javascript">\x3C/script>');
+            }
+            /*]]>*/
+        </script>
+
+     </div> </div>     <script type="text/javascript" src="http://static.bbc.co.uk/modules/sharetools/v1/script/sharetools.js"></script>
+ <script type="text/javascript"> if (typeof require !== 'undefined') { require(['istats-1'], function(istats){ istats.track('external', { region: document.getElementById('blq-main') }); istats.track('download', { region: document.getElementById('blq-main') }); }); } </script>  <script type="text/html" id="blq-panel-template-promo"><![CDATA[ <div id="blq-panel-promo" class="blq-masthead-container"></div> ]]></script> <script type="text/html" id="blq-panel-template-more"><![CDATA[ <div id="blq-panel-more" class="blq-masthead-container  blq-clearfix" lang="en-GB" dir="ltr"> <div class="blq-panel-container panel-paneltype-more"> <div class="panel-header"> <h2> <a href="/a-z/">  More&hellip;  </a> </h2>  <a href="/a-z/" class="panel-header-links panel-header-link">Full A-Z<span class="blq-hide"> of BBC sites</span></a>  </div> <div class="panel-component panel-links">       <ul>   <li> <a href="/cbbc/"  >CBBC</a> </li>    <li> <a href="/cbeebies/"  >CBeebies</a> </li>    <li> <a href="/comedy/"  >Comedy</a> </li>   </ul>  <ul>   <li> <a href="/food/"  >Food</a> </li>    <li> <a href="/history/"  >History</a> </li>    <li> <a href="/learning/"  >Learning</a> </li>   </ul>  <ul>   <li> <a href="/music/"  >Music</a> </li>    <li> <a href="/science/"  >Science</a> </li>    <li> <a href="/nature/"  >Nature</a> </li>   </ul>  <ul>   <li> <a href="/local/"  >Local</a> </li>    <li> <a href="/travelnews/"  >Travel News</a> </li>   </ul>   </div> </div> ]]></script>              </body> </html>            
